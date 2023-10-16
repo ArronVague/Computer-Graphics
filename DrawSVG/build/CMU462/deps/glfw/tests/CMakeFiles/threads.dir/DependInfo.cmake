@@ -8,14 +8,14 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/arron/computer-graphics/homework-1/DrawSVG/CMU462/deps/glfw/deps/glad.c" "CMU462/deps/glfw/tests/CMakeFiles/threads.dir/__/deps/glad.c.o" "gcc" "CMU462/deps/glfw/tests/CMakeFiles/threads.dir/__/deps/glad.c.o.d"
-  "/home/arron/computer-graphics/homework-1/DrawSVG/CMU462/deps/glfw/deps/tinycthread.c" "CMU462/deps/glfw/tests/CMakeFiles/threads.dir/__/deps/tinycthread.c.o" "gcc" "CMU462/deps/glfw/tests/CMakeFiles/threads.dir/__/deps/tinycthread.c.o.d"
-  "/home/arron/computer-graphics/homework-1/DrawSVG/CMU462/deps/glfw/tests/threads.c" "CMU462/deps/glfw/tests/CMakeFiles/threads.dir/threads.c.o" "gcc" "CMU462/deps/glfw/tests/CMakeFiles/threads.dir/threads.c.o.d"
+  "/home/arron/computer-graphics/DrawSVG/CMU462/deps/glfw/deps/glad.c" "CMU462/deps/glfw/tests/CMakeFiles/threads.dir/__/deps/glad.c.o" "gcc" "CMU462/deps/glfw/tests/CMakeFiles/threads.dir/__/deps/glad.c.o.d"
+  "/home/arron/computer-graphics/DrawSVG/CMU462/deps/glfw/deps/tinycthread.c" "CMU462/deps/glfw/tests/CMakeFiles/threads.dir/__/deps/tinycthread.c.o" "gcc" "CMU462/deps/glfw/tests/CMakeFiles/threads.dir/__/deps/tinycthread.c.o.d"
+  "/home/arron/computer-graphics/DrawSVG/CMU462/deps/glfw/tests/threads.c" "CMU462/deps/glfw/tests/CMakeFiles/threads.dir/threads.c.o" "gcc" "CMU462/deps/glfw/tests/CMakeFiles/threads.dir/threads.c.o.d"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/arron/computer-graphics/homework-1/DrawSVG/build/CMU462/deps/glfw/src/CMakeFiles/glfw.dir/DependInfo.cmake"
+  "/home/arron/computer-graphics/DrawSVG/build/CMU462/deps/glfw/src/CMakeFiles/glfw.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = -D_GLFW_USE_CONFIG_H
 
-C_INCLUDES = -I/home/arron/computer-graphics/homework-1/DrawSVG/CMU462/deps/glfw/include -I/home/arron/computer-graphics/homework-1/DrawSVG/CMU462/deps/glfw/src -I/home/arron/computer-graphics/homework-1/DrawSVG/build/CMU462/deps/glfw/src
+C_INCLUDES = -I/home/arron/computer-graphics/DrawSVG/CMU462/deps/glfw/include -I/home/arron/computer-graphics/DrawSVG/CMU462/deps/glfw/src -I/home/arron/computer-graphics/DrawSVG/build/CMU462/deps/glfw/src
 
 C_FLAGS = -fPIC -w -Wall
 

@@ -1,7 +1,7 @@
 CMU462/deps/glfw/tests/CMakeFiles/threads.dir/threads.c.o: \
- /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/deps/glfw/tests/threads.c \
+ /home/arron/computer-graphics/DrawSVG/CMU462/deps/glfw/tests/threads.c \
  /usr/include/stdc-predef.h \
- /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/deps/glfw/deps/tinycthread.h \
+ /home/arron/computer-graphics/DrawSVG/CMU462/deps/glfw/deps/tinycthread.h \
  /usr/include/time.h /usr/include/features.h \
  /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -46,15 +46,15 @@ CMU462/deps/glfw/tests/CMakeFiles/threads.dir/threads.c.o: \
  /usr/include/x86_64-linux-gnu/bits/setjmp.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
  /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
- /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/deps/glfw/deps/glad/glad.h \
- /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/deps/glfw/deps/KHR/khrplatform.h \
+ /home/arron/computer-graphics/DrawSVG/CMU462/deps/glfw/deps/glad/glad.h \
+ /home/arron/computer-graphics/DrawSVG/CMU462/deps/glfw/deps/KHR/khrplatform.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
  /usr/include/inttypes.h \
- /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/deps/glfw/include/GLFW/glfw3.h \
+ /home/arron/computer-graphics/DrawSVG/CMU462/deps/glfw/include/GLFW/glfw3.h \
  /usr/include/GL/gl.h /usr/include/stdio.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
  /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \

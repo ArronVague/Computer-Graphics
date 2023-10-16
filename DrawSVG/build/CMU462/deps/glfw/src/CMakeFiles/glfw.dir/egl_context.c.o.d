@@ -1,9 +1,9 @@
 CMU462/deps/glfw/src/CMakeFiles/glfw.dir/egl_context.c.o: \
- /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/deps/glfw/src/egl_context.c \
+ /home/arron/computer-graphics/DrawSVG/CMU462/deps/glfw/src/egl_context.c \
  /usr/include/stdc-predef.h \
- /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/deps/glfw/src/internal.h \
- /home/arron/computer-graphics/homework-1/DrawSVG/build/CMU462/deps/glfw/src/glfw_config.h \
- /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/deps/glfw/src/../include/GLFW/glfw3.h \
+ /home/arron/computer-graphics/DrawSVG/CMU462/deps/glfw/src/internal.h \
+ /home/arron/computer-graphics/DrawSVG/build/CMU462/deps/glfw/src/glfw_config.h \
+ /home/arron/computer-graphics/DrawSVG/CMU462/deps/glfw/src/../include/GLFW/glfw3.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
@@ -20,7 +20,7 @@ CMU462/deps/glfw/src/CMakeFiles/glfw.dir/egl_context.c.o: \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
- /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/deps/glfw/src/x11_platform.h \
+ /home/arron/computer-graphics/DrawSVG/CMU462/deps/glfw/src/x11_platform.h \
  /usr/include/unistd.h /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
  /usr/include/x86_64-linux-gnu/bits/environments.h \
  /usr/include/x86_64-linux-gnu/bits/confname.h \
@@ -88,7 +88,9 @@ CMU462/deps/glfw/src/CMakeFiles/glfw.dir/egl_context.c.o: \
  /usr/include/X11/extensions/render.h /usr/include/X11/Xdefs.h \
  /usr/include/X11/XKBlib.h /usr/include/X11/extensions/XKBstr.h \
  /usr/include/X11/extensions/XKB.h /usr/include/X11/extensions/Xinerama.h \
- /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/deps/glfw/src/posix_tls.h \
+ /usr/include/X11/extensions/xf86vmode.h /usr/include/X11/Xmd.h \
+ /usr/include/X11/extensions/xf86vm.h \
+ /home/arron/computer-graphics/DrawSVG/CMU462/deps/glfw/src/posix_tls.h \
  /usr/include/pthread.h /usr/include/sched.h \
  /usr/include/x86_64-linux-gnu/bits/sched.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h \
@@ -102,12 +104,12 @@ CMU462/deps/glfw/src/CMakeFiles/glfw.dir/egl_context.c.o: \
  /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
  /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
  /usr/include/x86_64-linux-gnu/bits/pthread_stack_min.h \
- /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/deps/glfw/src/posix_time.h \
- /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/deps/glfw/src/linux_joystick.h \
+ /home/arron/computer-graphics/DrawSVG/CMU462/deps/glfw/src/posix_time.h \
+ /home/arron/computer-graphics/DrawSVG/CMU462/deps/glfw/src/linux_joystick.h \
  /usr/include/regex.h \
- /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/deps/glfw/src/xkb_unicode.h \
- /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/deps/glfw/src/glx_context.h \
- /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/deps/glfw/src/egl_context.h \
+ /home/arron/computer-graphics/DrawSVG/CMU462/deps/glfw/src/xkb_unicode.h \
+ /home/arron/computer-graphics/DrawSVG/CMU462/deps/glfw/src/glx_context.h \
+ /home/arron/computer-graphics/DrawSVG/CMU462/deps/glfw/src/egl_context.h \
  /usr/include/string.h /usr/include/strings.h /usr/include/stdlib.h \
  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
  /usr/include/x86_64-linux-gnu/bits/waitstatus.h /usr/include/alloca.h \

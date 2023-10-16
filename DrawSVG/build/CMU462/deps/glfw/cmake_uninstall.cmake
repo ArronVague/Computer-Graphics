@@ -1,9 +1,9 @@
 
-if (NOT EXISTS "/home/arron/computer-graphics/homework-1/DrawSVG/build/CMU462/deps/glfw/install_manifest.txt")
-  message(FATAL_ERROR "Cannot find install manifest: \"/home/arron/computer-graphics/homework-1/DrawSVG/build/CMU462/deps/glfw/install_manifest.txt\"")
+if (NOT EXISTS "/home/arron/computer-graphics/DrawSVG/build/CMU462/deps/glfw/install_manifest.txt")
+  message(FATAL_ERROR "Cannot find install manifest: \"/home/arron/computer-graphics/DrawSVG/build/CMU462/deps/glfw/install_manifest.txt\"")
 endif()
 
-file(READ "/home/arron/computer-graphics/homework-1/DrawSVG/build/CMU462/deps/glfw/install_manifest.txt" files)
+file(READ "/home/arron/computer-graphics/DrawSVG/build/CMU462/deps/glfw/install_manifest.txt" files)
 string(REGEX REPLACE "\n" ";" files "${files}")
 
 foreach (file ${files})

@@ -1,9 +1,9 @@
 CMU462/src/CMakeFiles/CMU462.dir/vector2D.cpp.o: \
- /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/src/vector2D.cpp \
+ /home/arron/computer-graphics/DrawSVG/CMU462/src/vector2D.cpp \
  /usr/include/stdc-predef.h \
- /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/include/CMU462/vector2D.h \
- /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/include/CMU462/CMU462.h \
- /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/include/CMU462/misc.h \
+ /home/arron/computer-graphics/DrawSVG/CMU462/include/CMU462/vector2D.h \
+ /home/arron/computer-graphics/DrawSVG/CMU462/include/CMU462/CMU462.h \
+ /home/arron/computer-graphics/DrawSVG/CMU462/include/CMU462/misc.h \
  /usr/include/c++/11/cmath \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \

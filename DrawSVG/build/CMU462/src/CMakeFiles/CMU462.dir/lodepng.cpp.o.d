@@ -1,7 +1,7 @@
 CMU462/src/CMakeFiles/CMU462.dir/lodepng.cpp.o: \
- /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/src/lodepng.cpp \
+ /home/arron/computer-graphics/DrawSVG/CMU462/src/lodepng.cpp \
  /usr/include/stdc-predef.h \
- /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/include/CMU462/lodepng.h \
+ /home/arron/computer-graphics/DrawSVG/CMU462/include/CMU462/lodepng.h \
  /usr/include/string.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/arron/computer-graphics/homework-1/DrawSVG
+CMAKE_SOURCE_DIR = /home/arron/computer-graphics/DrawSVG
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/arron/computer-graphics/homework-1/DrawSVG/build
+CMAKE_BINARY_DIR = /home/arron/computer-graphics/DrawSVG/build
 
 # Utility rule file for uninstall.
 
@@ -67,7 +67,7 @@ include CMU462/deps/glfw/CMakeFiles/uninstall.dir/compiler_depend.make
 include CMU462/deps/glfw/CMakeFiles/uninstall.dir/progress.make
 
 CMU462/deps/glfw/CMakeFiles/uninstall:
-	cd /home/arron/computer-graphics/homework-1/DrawSVG/build/CMU462/deps/glfw && /usr/bin/cmake -P /home/arron/computer-graphics/homework-1/DrawSVG/build/CMU462/deps/glfw/cmake_uninstall.cmake
+	cd /home/arron/computer-graphics/DrawSVG/build/CMU462/deps/glfw && /usr/bin/cmake -P /home/arron/computer-graphics/DrawSVG/build/CMU462/deps/glfw/cmake_uninstall.cmake
 
 uninstall: CMU462/deps/glfw/CMakeFiles/uninstall
 uninstall: CMU462/deps/glfw/CMakeFiles/uninstall.dir/build.make
@@ -78,10 +78,10 @@ CMU462/deps/glfw/CMakeFiles/uninstall.dir/build: uninstall
 .PHONY : CMU462/deps/glfw/CMakeFiles/uninstall.dir/build
 
 CMU462/deps/glfw/CMakeFiles/uninstall.dir/clean:
-	cd /home/arron/computer-graphics/homework-1/DrawSVG/build/CMU462/deps/glfw && $(CMAKE_COMMAND) -P CMakeFiles/uninstall.dir/cmake_clean.cmake
+	cd /home/arron/computer-graphics/DrawSVG/build/CMU462/deps/glfw && $(CMAKE_COMMAND) -P CMakeFiles/uninstall.dir/cmake_clean.cmake
 .PHONY : CMU462/deps/glfw/CMakeFiles/uninstall.dir/clean
 
 CMU462/deps/glfw/CMakeFiles/uninstall.dir/depend:
-	cd /home/arron/computer-graphics/homework-1/DrawSVG/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/arron/computer-graphics/homework-1/DrawSVG /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/deps/glfw /home/arron/computer-graphics/homework-1/DrawSVG/build /home/arron/computer-graphics/homework-1/DrawSVG/build/CMU462/deps/glfw /home/arron/computer-graphics/homework-1/DrawSVG/build/CMU462/deps/glfw/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/arron/computer-graphics/DrawSVG/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/arron/computer-graphics/DrawSVG /home/arron/computer-graphics/DrawSVG/CMU462/deps/glfw /home/arron/computer-graphics/DrawSVG/build /home/arron/computer-graphics/DrawSVG/build/CMU462/deps/glfw /home/arron/computer-graphics/DrawSVG/build/CMU462/deps/glfw/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMU462/deps/glfw/CMakeFiles/uninstall.dir/depend
 

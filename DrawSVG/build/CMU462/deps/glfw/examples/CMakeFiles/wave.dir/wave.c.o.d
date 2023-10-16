@@ -1,5 +1,5 @@
 CMU462/deps/glfw/examples/CMakeFiles/wave.dir/wave.c.o: \
- /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/deps/glfw/examples/wave.c \
+ /home/arron/computer-graphics/DrawSVG/CMU462/deps/glfw/examples/wave.c \
  /usr/include/stdc-predef.h /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -55,12 +55,12 @@ CMU462/deps/glfw/examples/CMakeFiles/wave.dir/wave.c.o: \
  /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
  /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
- /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/deps/glfw/deps/glad/glad.h \
- /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/deps/glfw/deps/KHR/khrplatform.h \
+ /home/arron/computer-graphics/DrawSVG/CMU462/deps/glfw/deps/glad/glad.h \
+ /home/arron/computer-graphics/DrawSVG/CMU462/deps/glfw/deps/KHR/khrplatform.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
  /usr/include/inttypes.h \
- /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/deps/glfw/include/GLFW/glfw3.h \
+ /home/arron/computer-graphics/DrawSVG/CMU462/deps/glfw/include/GLFW/glfw3.h \
  /usr/include/GL/gl.h \
- /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/deps/glfw/deps/linmath.h
+ /home/arron/computer-graphics/DrawSVG/CMU462/deps/glfw/deps/linmath.h

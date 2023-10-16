@@ -1,4 +1,4 @@
-# Install script for directory: /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/deps/glfw/tests
+# Install script for directory: /home/arron/computer-graphics/DrawSVG/CMU462/deps/glfw/tests
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

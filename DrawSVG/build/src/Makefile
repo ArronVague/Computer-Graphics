@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/arron/computer-graphics/homework-1/DrawSVG
+CMAKE_SOURCE_DIR = /home/arron/computer-graphics/DrawSVG
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/arron/computer-graphics/homework-1/DrawSVG/build
+CMAKE_BINARY_DIR = /home/arron/computer-graphics/DrawSVG/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/arron/computer-graphics/homework-1/DrawSVG/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/arron/computer-graphics/homework-1/DrawSVG/build/CMakeFiles /home/arron/computer-graphics/homework-1/DrawSVG/build/src//CMakeFiles/progress.marks
-	cd /home/arron/computer-graphics/homework-1/DrawSVG/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/arron/computer-graphics/homework-1/DrawSVG/build/CMakeFiles 0
+	cd /home/arron/computer-graphics/DrawSVG/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/arron/computer-graphics/DrawSVG/build/CMakeFiles /home/arron/computer-graphics/DrawSVG/build/src//CMakeFiles/progress.marks
+	cd /home/arron/computer-graphics/DrawSVG/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/arron/computer-graphics/DrawSVG/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/arron/computer-graphics/homework-1/DrawSVG/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/clean
+	cd /home/arron/computer-graphics/DrawSVG/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,22 +148,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/arron/computer-graphics/homework-1/DrawSVG/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/arron/computer-graphics/DrawSVG/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/arron/computer-graphics/homework-1/DrawSVG/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/arron/computer-graphics/DrawSVG/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/arron/computer-graphics/homework-1/DrawSVG/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/arron/computer-graphics/DrawSVG/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/CMakeFiles/drawsvg_hdwr.dir/rule:
-	cd /home/arron/computer-graphics/homework-1/DrawSVG/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/drawsvg_hdwr.dir/rule
+	cd /home/arron/computer-graphics/DrawSVG/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/drawsvg_hdwr.dir/rule
 .PHONY : src/CMakeFiles/drawsvg_hdwr.dir/rule
 
 # Convenience name for target.
@@ -172,12 +172,12 @@ drawsvg_hdwr: src/CMakeFiles/drawsvg_hdwr.dir/rule
 
 # fast build rule for target.
 drawsvg_hdwr/fast:
-	cd /home/arron/computer-graphics/homework-1/DrawSVG/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/drawsvg_hdwr.dir/build.make src/CMakeFiles/drawsvg_hdwr.dir/build
+	cd /home/arron/computer-graphics/DrawSVG/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/drawsvg_hdwr.dir/build.make src/CMakeFiles/drawsvg_hdwr.dir/build
 .PHONY : drawsvg_hdwr/fast
 
 # Convenience name for target.
 src/CMakeFiles/drawsvg.dir/rule:
-	cd /home/arron/computer-graphics/homework-1/DrawSVG/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/drawsvg.dir/rule
+	cd /home/arron/computer-graphics/DrawSVG/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/drawsvg.dir/rule
 .PHONY : src/CMakeFiles/drawsvg.dir/rule
 
 # Convenience name for target.
@@ -186,7 +186,7 @@ drawsvg: src/CMakeFiles/drawsvg.dir/rule
 
 # fast build rule for target.
 drawsvg/fast:
-	cd /home/arron/computer-graphics/homework-1/DrawSVG/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/drawsvg.dir/build.make src/CMakeFiles/drawsvg.dir/build
+	cd /home/arron/computer-graphics/DrawSVG/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/drawsvg.dir/build.make src/CMakeFiles/drawsvg.dir/build
 .PHONY : drawsvg/fast
 
 drawsvg.o: drawsvg.cpp.o
@@ -194,7 +194,7 @@ drawsvg.o: drawsvg.cpp.o
 
 # target to build an object file
 drawsvg.cpp.o:
-	cd /home/arron/computer-graphics/homework-1/DrawSVG/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/drawsvg.dir/build.make src/CMakeFiles/drawsvg.dir/drawsvg.cpp.o
+	cd /home/arron/computer-graphics/DrawSVG/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/drawsvg.dir/build.make src/CMakeFiles/drawsvg.dir/drawsvg.cpp.o
 .PHONY : drawsvg.cpp.o
 
 drawsvg.i: drawsvg.cpp.i
@@ -202,7 +202,7 @@ drawsvg.i: drawsvg.cpp.i
 
 # target to preprocess a source file
 drawsvg.cpp.i:
-	cd /home/arron/computer-graphics/homework-1/DrawSVG/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/drawsvg.dir/build.make src/CMakeFiles/drawsvg.dir/drawsvg.cpp.i
+	cd /home/arron/computer-graphics/DrawSVG/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/drawsvg.dir/build.make src/CMakeFiles/drawsvg.dir/drawsvg.cpp.i
 .PHONY : drawsvg.cpp.i
 
 drawsvg.s: drawsvg.cpp.s
@@ -210,7 +210,7 @@ drawsvg.s: drawsvg.cpp.s
 
 # target to generate assembly for a file
 drawsvg.cpp.s:
-	cd /home/arron/computer-graphics/homework-1/DrawSVG/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/drawsvg.dir/build.make src/CMakeFiles/drawsvg.dir/drawsvg.cpp.s
+	cd /home/arron/computer-graphics/DrawSVG/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/drawsvg.dir/build.make src/CMakeFiles/drawsvg.dir/drawsvg.cpp.s
 .PHONY : drawsvg.cpp.s
 
 hardware/hardware_renderer.o: hardware/hardware_renderer.cpp.o
@@ -218,7 +218,7 @@ hardware/hardware_renderer.o: hardware/hardware_renderer.cpp.o
 
 # target to build an object file
 hardware/hardware_renderer.cpp.o:
-	cd /home/arron/computer-graphics/homework-1/DrawSVG/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/drawsvg_hdwr.dir/build.make src/CMakeFiles/drawsvg_hdwr.dir/hardware/hardware_renderer.cpp.o
+	cd /home/arron/computer-graphics/DrawSVG/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/drawsvg_hdwr.dir/build.make src/CMakeFiles/drawsvg_hdwr.dir/hardware/hardware_renderer.cpp.o
 .PHONY : hardware/hardware_renderer.cpp.o
 
 hardware/hardware_renderer.i: hardware/hardware_renderer.cpp.i
@@ -226,7 +226,7 @@ hardware/hardware_renderer.i: hardware/hardware_renderer.cpp.i
 
 # target to preprocess a source file
 hardware/hardware_renderer.cpp.i:
-	cd /home/arron/computer-graphics/homework-1/DrawSVG/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/drawsvg_hdwr.dir/build.make src/CMakeFiles/drawsvg_hdwr.dir/hardware/hardware_renderer.cpp.i
+	cd /home/arron/computer-graphics/DrawSVG/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/drawsvg_hdwr.dir/build.make src/CMakeFiles/drawsvg_hdwr.dir/hardware/hardware_renderer.cpp.i
 .PHONY : hardware/hardware_renderer.cpp.i
 
 hardware/hardware_renderer.s: hardware/hardware_renderer.cpp.s
@@ -234,7 +234,7 @@ hardware/hardware_renderer.s: hardware/hardware_renderer.cpp.s
 
 # target to generate assembly for a file
 hardware/hardware_renderer.cpp.s:
-	cd /home/arron/computer-graphics/homework-1/DrawSVG/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/drawsvg_hdwr.dir/build.make src/CMakeFiles/drawsvg_hdwr.dir/hardware/hardware_renderer.cpp.s
+	cd /home/arron/computer-graphics/DrawSVG/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/drawsvg_hdwr.dir/build.make src/CMakeFiles/drawsvg_hdwr.dir/hardware/hardware_renderer.cpp.s
 .PHONY : hardware/hardware_renderer.cpp.s
 
 main.o: main.cpp.o
@@ -242,7 +242,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	cd /home/arron/computer-graphics/homework-1/DrawSVG/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/drawsvg.dir/build.make src/CMakeFiles/drawsvg.dir/main.cpp.o
+	cd /home/arron/computer-graphics/DrawSVG/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/drawsvg.dir/build.make src/CMakeFiles/drawsvg.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -250,7 +250,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	cd /home/arron/computer-graphics/homework-1/DrawSVG/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/drawsvg.dir/build.make src/CMakeFiles/drawsvg.dir/main.cpp.i
+	cd /home/arron/computer-graphics/DrawSVG/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/drawsvg.dir/build.make src/CMakeFiles/drawsvg.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -258,7 +258,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	cd /home/arron/computer-graphics/homework-1/DrawSVG/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/drawsvg.dir/build.make src/CMakeFiles/drawsvg.dir/main.cpp.s
+	cd /home/arron/computer-graphics/DrawSVG/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/drawsvg.dir/build.make src/CMakeFiles/drawsvg.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 png.o: png.cpp.o
@@ -266,7 +266,7 @@ png.o: png.cpp.o
 
 # target to build an object file
 png.cpp.o:
-	cd /home/arron/computer-graphics/homework-1/DrawSVG/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/drawsvg.dir/build.make src/CMakeFiles/drawsvg.dir/png.cpp.o
+	cd /home/arron/computer-graphics/DrawSVG/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/drawsvg.dir/build.make src/CMakeFiles/drawsvg.dir/png.cpp.o
 .PHONY : png.cpp.o
 
 png.i: png.cpp.i
@@ -274,7 +274,7 @@ png.i: png.cpp.i
 
 # target to preprocess a source file
 png.cpp.i:
-	cd /home/arron/computer-graphics/homework-1/DrawSVG/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/drawsvg.dir/build.make src/CMakeFiles/drawsvg.dir/png.cpp.i
+	cd /home/arron/computer-graphics/DrawSVG/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/drawsvg.dir/build.make src/CMakeFiles/drawsvg.dir/png.cpp.i
 .PHONY : png.cpp.i
 
 png.s: png.cpp.s
@@ -282,7 +282,7 @@ png.s: png.cpp.s
 
 # target to generate assembly for a file
 png.cpp.s:
-	cd /home/arron/computer-graphics/homework-1/DrawSVG/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/drawsvg.dir/build.make src/CMakeFiles/drawsvg.dir/png.cpp.s
+	cd /home/arron/computer-graphics/DrawSVG/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/drawsvg.dir/build.make src/CMakeFiles/drawsvg.dir/png.cpp.s
 .PHONY : png.cpp.s
 
 software_renderer.o: software_renderer.cpp.o
@@ -290,7 +290,7 @@ software_renderer.o: software_renderer.cpp.o
 
 # target to build an object file
 software_renderer.cpp.o:
-	cd /home/arron/computer-graphics/homework-1/DrawSVG/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/drawsvg.dir/build.make src/CMakeFiles/drawsvg.dir/software_renderer.cpp.o
+	cd /home/arron/computer-graphics/DrawSVG/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/drawsvg.dir/build.make src/CMakeFiles/drawsvg.dir/software_renderer.cpp.o
 .PHONY : software_renderer.cpp.o
 
 software_renderer.i: software_renderer.cpp.i
@@ -298,7 +298,7 @@ software_renderer.i: software_renderer.cpp.i
 
 # target to preprocess a source file
 software_renderer.cpp.i:
-	cd /home/arron/computer-graphics/homework-1/DrawSVG/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/drawsvg.dir/build.make src/CMakeFiles/drawsvg.dir/software_renderer.cpp.i
+	cd /home/arron/computer-graphics/DrawSVG/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/drawsvg.dir/build.make src/CMakeFiles/drawsvg.dir/software_renderer.cpp.i
 .PHONY : software_renderer.cpp.i
 
 software_renderer.s: software_renderer.cpp.s
@@ -306,7 +306,7 @@ software_renderer.s: software_renderer.cpp.s
 
 # target to generate assembly for a file
 software_renderer.cpp.s:
-	cd /home/arron/computer-graphics/homework-1/DrawSVG/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/drawsvg.dir/build.make src/CMakeFiles/drawsvg.dir/software_renderer.cpp.s
+	cd /home/arron/computer-graphics/DrawSVG/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/drawsvg.dir/build.make src/CMakeFiles/drawsvg.dir/software_renderer.cpp.s
 .PHONY : software_renderer.cpp.s
 
 svg.o: svg.cpp.o
@@ -314,7 +314,7 @@ svg.o: svg.cpp.o
 
 # target to build an object file
 svg.cpp.o:
-	cd /home/arron/computer-graphics/homework-1/DrawSVG/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/drawsvg.dir/build.make src/CMakeFiles/drawsvg.dir/svg.cpp.o
+	cd /home/arron/computer-graphics/DrawSVG/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/drawsvg.dir/build.make src/CMakeFiles/drawsvg.dir/svg.cpp.o
 .PHONY : svg.cpp.o
 
 svg.i: svg.cpp.i
@@ -322,7 +322,7 @@ svg.i: svg.cpp.i
 
 # target to preprocess a source file
 svg.cpp.i:
-	cd /home/arron/computer-graphics/homework-1/DrawSVG/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/drawsvg.dir/build.make src/CMakeFiles/drawsvg.dir/svg.cpp.i
+	cd /home/arron/computer-graphics/DrawSVG/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/drawsvg.dir/build.make src/CMakeFiles/drawsvg.dir/svg.cpp.i
 .PHONY : svg.cpp.i
 
 svg.s: svg.cpp.s
@@ -330,7 +330,7 @@ svg.s: svg.cpp.s
 
 # target to generate assembly for a file
 svg.cpp.s:
-	cd /home/arron/computer-graphics/homework-1/DrawSVG/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/drawsvg.dir/build.make src/CMakeFiles/drawsvg.dir/svg.cpp.s
+	cd /home/arron/computer-graphics/DrawSVG/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/drawsvg.dir/build.make src/CMakeFiles/drawsvg.dir/svg.cpp.s
 .PHONY : svg.cpp.s
 
 texture.o: texture.cpp.o
@@ -338,7 +338,7 @@ texture.o: texture.cpp.o
 
 # target to build an object file
 texture.cpp.o:
-	cd /home/arron/computer-graphics/homework-1/DrawSVG/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/drawsvg.dir/build.make src/CMakeFiles/drawsvg.dir/texture.cpp.o
+	cd /home/arron/computer-graphics/DrawSVG/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/drawsvg.dir/build.make src/CMakeFiles/drawsvg.dir/texture.cpp.o
 .PHONY : texture.cpp.o
 
 texture.i: texture.cpp.i
@@ -346,7 +346,7 @@ texture.i: texture.cpp.i
 
 # target to preprocess a source file
 texture.cpp.i:
-	cd /home/arron/computer-graphics/homework-1/DrawSVG/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/drawsvg.dir/build.make src/CMakeFiles/drawsvg.dir/texture.cpp.i
+	cd /home/arron/computer-graphics/DrawSVG/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/drawsvg.dir/build.make src/CMakeFiles/drawsvg.dir/texture.cpp.i
 .PHONY : texture.cpp.i
 
 texture.s: texture.cpp.s
@@ -354,7 +354,7 @@ texture.s: texture.cpp.s
 
 # target to generate assembly for a file
 texture.cpp.s:
-	cd /home/arron/computer-graphics/homework-1/DrawSVG/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/drawsvg.dir/build.make src/CMakeFiles/drawsvg.dir/texture.cpp.s
+	cd /home/arron/computer-graphics/DrawSVG/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/drawsvg.dir/build.make src/CMakeFiles/drawsvg.dir/texture.cpp.s
 .PHONY : texture.cpp.s
 
 triangulation.o: triangulation.cpp.o
@@ -362,7 +362,7 @@ triangulation.o: triangulation.cpp.o
 
 # target to build an object file
 triangulation.cpp.o:
-	cd /home/arron/computer-graphics/homework-1/DrawSVG/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/drawsvg.dir/build.make src/CMakeFiles/drawsvg.dir/triangulation.cpp.o
+	cd /home/arron/computer-graphics/DrawSVG/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/drawsvg.dir/build.make src/CMakeFiles/drawsvg.dir/triangulation.cpp.o
 .PHONY : triangulation.cpp.o
 
 triangulation.i: triangulation.cpp.i
@@ -370,7 +370,7 @@ triangulation.i: triangulation.cpp.i
 
 # target to preprocess a source file
 triangulation.cpp.i:
-	cd /home/arron/computer-graphics/homework-1/DrawSVG/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/drawsvg.dir/build.make src/CMakeFiles/drawsvg.dir/triangulation.cpp.i
+	cd /home/arron/computer-graphics/DrawSVG/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/drawsvg.dir/build.make src/CMakeFiles/drawsvg.dir/triangulation.cpp.i
 .PHONY : triangulation.cpp.i
 
 triangulation.s: triangulation.cpp.s
@@ -378,7 +378,7 @@ triangulation.s: triangulation.cpp.s
 
 # target to generate assembly for a file
 triangulation.cpp.s:
-	cd /home/arron/computer-graphics/homework-1/DrawSVG/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/drawsvg.dir/build.make src/CMakeFiles/drawsvg.dir/triangulation.cpp.s
+	cd /home/arron/computer-graphics/DrawSVG/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/drawsvg.dir/build.make src/CMakeFiles/drawsvg.dir/triangulation.cpp.s
 .PHONY : triangulation.cpp.s
 
 viewport.o: viewport.cpp.o
@@ -386,7 +386,7 @@ viewport.o: viewport.cpp.o
 
 # target to build an object file
 viewport.cpp.o:
-	cd /home/arron/computer-graphics/homework-1/DrawSVG/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/drawsvg.dir/build.make src/CMakeFiles/drawsvg.dir/viewport.cpp.o
+	cd /home/arron/computer-graphics/DrawSVG/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/drawsvg.dir/build.make src/CMakeFiles/drawsvg.dir/viewport.cpp.o
 .PHONY : viewport.cpp.o
 
 viewport.i: viewport.cpp.i
@@ -394,7 +394,7 @@ viewport.i: viewport.cpp.i
 
 # target to preprocess a source file
 viewport.cpp.i:
-	cd /home/arron/computer-graphics/homework-1/DrawSVG/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/drawsvg.dir/build.make src/CMakeFiles/drawsvg.dir/viewport.cpp.i
+	cd /home/arron/computer-graphics/DrawSVG/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/drawsvg.dir/build.make src/CMakeFiles/drawsvg.dir/viewport.cpp.i
 .PHONY : viewport.cpp.i
 
 viewport.s: viewport.cpp.s
@@ -402,7 +402,7 @@ viewport.s: viewport.cpp.s
 
 # target to generate assembly for a file
 viewport.cpp.s:
-	cd /home/arron/computer-graphics/homework-1/DrawSVG/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/drawsvg.dir/build.make src/CMakeFiles/drawsvg.dir/viewport.cpp.s
+	cd /home/arron/computer-graphics/DrawSVG/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/drawsvg.dir/build.make src/CMakeFiles/drawsvg.dir/viewport.cpp.s
 .PHONY : viewport.cpp.s
 
 # Help Target
@@ -457,6 +457,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/arron/computer-graphics/homework-1/DrawSVG/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/arron/computer-graphics/DrawSVG/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

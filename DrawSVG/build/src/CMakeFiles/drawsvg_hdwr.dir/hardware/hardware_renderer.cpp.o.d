@@ -1,7 +1,7 @@
 src/CMakeFiles/drawsvg_hdwr.dir/hardware/hardware_renderer.cpp.o: \
- /home/arron/computer-graphics/homework-1/DrawSVG/src/hardware/hardware_renderer.cpp \
+ /home/arron/computer-graphics/DrawSVG/src/hardware/hardware_renderer.cpp \
  /usr/include/stdc-predef.h \
- /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/include/GL/glew.h \
+ /home/arron/computer-graphics/DrawSVG/CMU462/include/GL/glew.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
@@ -19,7 +19,7 @@ src/CMakeFiles/drawsvg_hdwr.dir/hardware/hardware_renderer.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h /usr/include/GL/glu.h \
  /usr/include/GL/gl.h \
- /home/arron/computer-graphics/homework-1/DrawSVG/src/hardware_renderer.h \
+ /home/arron/computer-graphics/DrawSVG/src/hardware_renderer.h \
  /usr/include/stdio.h /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
  /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
@@ -33,8 +33,8 @@ src/CMakeFiles/drawsvg_hdwr.dir/hardware/hardware_renderer.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
  /usr/include/x86_64-linux-gnu/bits/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/stdio2.h \
- /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/include/CMU462/CMU462.h \
- /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/include/CMU462/misc.h \
+ /home/arron/computer-graphics/DrawSVG/CMU462/include/CMU462/CMU462.h \
+ /home/arron/computer-graphics/DrawSVG/CMU462/include/CMU462/misc.h \
  /usr/include/c++/11/cmath \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -102,10 +102,9 @@ src/CMakeFiles/drawsvg_hdwr.dir/hardware/hardware_renderer.cpp.o: \
  /usr/include/c++/11/bits/stl_construct.h /usr/include/c++/11/new \
  /usr/include/c++/11/bits/exception.h \
  /usr/include/c++/11/bits/uniform_int_dist.h \
- /home/arron/computer-graphics/homework-1/DrawSVG/src/svg_renderer.h \
- /home/arron/computer-graphics/homework-1/DrawSVG/src/svg.h \
- /usr/include/c++/11/map /usr/include/c++/11/bits/stl_tree.h \
- /usr/include/c++/11/bits/allocator.h \
+ /home/arron/computer-graphics/DrawSVG/src/svg_renderer.h \
+ /home/arron/computer-graphics/DrawSVG/src/svg.h /usr/include/c++/11/map \
+ /usr/include/c++/11/bits/stl_tree.h /usr/include/c++/11/bits/allocator.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h \
  /usr/include/c++/11/ext/new_allocator.h \
  /usr/include/c++/11/bits/memoryfwd.h \
@@ -126,8 +125,8 @@ src/CMakeFiles/drawsvg_hdwr.dir/hardware/hardware_renderer.cpp.o: \
  /usr/include/c++/11/bits/functional_hash.h \
  /usr/include/c++/11/bits/hash_bytes.h \
  /usr/include/c++/11/bits/vector.tcc \
- /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/include/CMU462/color.h \
- /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/include/CMU462/CMU462.h \
+ /home/arron/computer-graphics/DrawSVG/CMU462/include/CMU462/color.h \
+ /home/arron/computer-graphics/DrawSVG/CMU462/include/CMU462/CMU462.h \
  /usr/include/c++/11/string /usr/include/c++/11/bits/stringfwd.h \
  /usr/include/c++/11/bits/char_traits.h \
  /usr/include/c++/11/bits/postypes.h /usr/include/c++/11/cwchar \
@@ -166,8 +165,8 @@ src/CMakeFiles/drawsvg_hdwr.dir/hardware/hardware_renderer.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
  /usr/include/c++/11/bits/charconv.h \
  /usr/include/c++/11/bits/basic_string.tcc \
- /home/arron/computer-graphics/homework-1/DrawSVG/src/texture.h \
- /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/include/CMU462/vector2D.h \
+ /home/arron/computer-graphics/DrawSVG/src/texture.h \
+ /home/arron/computer-graphics/DrawSVG/CMU462/include/CMU462/vector2D.h \
  /usr/include/c++/11/ostream /usr/include/c++/11/ios \
  /usr/include/c++/11/exception /usr/include/c++/11/bits/exception_ptr.h \
  /usr/include/c++/11/bits/cxxabi_init_exception.h \
@@ -188,9 +187,9 @@ src/CMakeFiles/drawsvg_hdwr.dir/hardware/hardware_renderer.cpp.o: \
  /usr/include/c++/11/bits/locale_facets.tcc \
  /usr/include/c++/11/bits/basic_ios.tcc \
  /usr/include/c++/11/bits/ostream.tcc \
- /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/include/CMU462/matrix3x3.h \
- /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/include/CMU462/vector3D.h \
- /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/include/CMU462/tinyxml2.h \
+ /home/arron/computer-graphics/DrawSVG/CMU462/include/CMU462/matrix3x3.h \
+ /home/arron/computer-graphics/DrawSVG/CMU462/include/CMU462/vector3D.h \
+ /home/arron/computer-graphics/DrawSVG/CMU462/include/CMU462/tinyxml2.h \
  /usr/include/c++/11/climits \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h \
@@ -204,8 +203,8 @@ src/CMakeFiles/drawsvg_hdwr.dir/hardware/hardware_renderer.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
  /usr/include/x86_64-linux-gnu/bits/string_fortified.h \
  /usr/include/c++/11/cstdarg \
- /home/arron/computer-graphics/homework-1/DrawSVG/src/viewport.h \
+ /home/arron/computer-graphics/DrawSVG/src/viewport.h \
  /usr/include/c++/11/iostream /usr/include/c++/11/istream \
  /usr/include/c++/11/bits/istream.tcc \
- /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/include/GLFW/glfw3.h \
- /home/arron/computer-graphics/homework-1/DrawSVG/src/triangulation.h
+ /home/arron/computer-graphics/DrawSVG/CMU462/include/GLFW/glfw3.h \
+ /home/arron/computer-graphics/DrawSVG/src/triangulation.h

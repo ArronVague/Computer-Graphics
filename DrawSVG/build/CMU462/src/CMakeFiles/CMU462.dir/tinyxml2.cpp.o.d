@@ -1,7 +1,7 @@
 CMU462/src/CMakeFiles/CMU462.dir/tinyxml2.cpp.o: \
- /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/src/tinyxml2.cpp \
+ /home/arron/computer-graphics/DrawSVG/CMU462/src/tinyxml2.cpp \
  /usr/include/stdc-predef.h \
- /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/include/CMU462/tinyxml2.h \
+ /home/arron/computer-graphics/DrawSVG/CMU462/include/CMU462/tinyxml2.h \
  /usr/include/c++/11/cctype \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \

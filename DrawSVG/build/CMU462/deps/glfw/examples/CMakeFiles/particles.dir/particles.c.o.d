@@ -1,5 +1,5 @@
 CMU462/deps/glfw/examples/CMakeFiles/particles.dir/particles.c.o: \
- /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/deps/glfw/examples/particles.c \
+ /home/arron/computer-graphics/DrawSVG/CMU462/deps/glfw/examples/particles.c \
  /usr/include/stdc-predef.h /usr/include/stdlib.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -61,7 +61,7 @@ CMU462/deps/glfw/examples/CMakeFiles/particles.dir/particles.c.o: \
  /usr/include/x86_64-linux-gnu/bits/time.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
- /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/deps/glfw/deps/tinycthread.h \
+ /home/arron/computer-graphics/DrawSVG/CMU462/deps/glfw/deps/tinycthread.h \
  /usr/include/x86_64-linux-gnu/sys/time.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/x86_64-linux-gnu/bits/sched.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h \
@@ -69,13 +69,13 @@ CMU462/deps/glfw/examples/CMakeFiles/particles.dir/particles.c.o: \
  /usr/include/x86_64-linux-gnu/bits/setjmp.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
  /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
- /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/deps/glfw/deps/getopt.h \
- /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/deps/glfw/deps/linmath.h \
- /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/deps/glfw/deps/glad/glad.h \
- /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/deps/glfw/deps/KHR/khrplatform.h \
+ /home/arron/computer-graphics/DrawSVG/CMU462/deps/glfw/deps/getopt.h \
+ /home/arron/computer-graphics/DrawSVG/CMU462/deps/glfw/deps/linmath.h \
+ /home/arron/computer-graphics/DrawSVG/CMU462/deps/glfw/deps/glad/glad.h \
+ /home/arron/computer-graphics/DrawSVG/CMU462/deps/glfw/deps/KHR/khrplatform.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
  /usr/include/inttypes.h \
- /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/deps/glfw/include/GLFW/glfw3.h \
+ /home/arron/computer-graphics/DrawSVG/CMU462/deps/glfw/include/GLFW/glfw3.h \
  /usr/include/GL/gl.h

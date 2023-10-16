@@ -1,9 +1,9 @@
 CMU462/deps/glfw/tests/CMakeFiles/timeout.dir/timeout.c.o: \
- /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/deps/glfw/tests/timeout.c \
+ /home/arron/computer-graphics/DrawSVG/CMU462/deps/glfw/tests/timeout.c \
  /usr/include/stdc-predef.h \
- /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/deps/glfw/deps/glad/glad.h \
+ /home/arron/computer-graphics/DrawSVG/CMU462/deps/glfw/deps/glad/glad.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
- /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/deps/glfw/deps/KHR/khrplatform.h \
+ /home/arron/computer-graphics/DrawSVG/CMU462/deps/glfw/deps/KHR/khrplatform.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -20,7 +20,7 @@ CMU462/deps/glfw/tests/CMakeFiles/timeout.dir/timeout.c.o: \
  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
  /usr/include/inttypes.h \
- /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/deps/glfw/include/GLFW/glfw3.h \
+ /home/arron/computer-graphics/DrawSVG/CMU462/deps/glfw/include/GLFW/glfw3.h \
  /usr/include/GL/gl.h /usr/include/time.h \
  /usr/include/x86_64-linux-gnu/bits/time.h \
  /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \

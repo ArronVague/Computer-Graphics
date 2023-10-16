@@ -1,7 +1,7 @@
 CMU462/src/CMakeFiles/CMU462.dir/base64.cpp.o: \
- /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/src/base64.cpp \
+ /home/arron/computer-graphics/DrawSVG/CMU462/src/base64.cpp \
  /usr/include/stdc-predef.h \
- /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/include/CMU462/base64.h \
+ /home/arron/computer-graphics/DrawSVG/CMU462/include/CMU462/base64.h \
  /usr/include/c++/11/string \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \

@@ -106,6 +106,9 @@ CMU462/deps/glfw/src/CMakeFiles/glfw.dir/context.c.o: ../CMU462/deps/glfw/src/co
   /usr/include/X11/extensions/XKBstr.h \
   /usr/include/X11/extensions/XKB.h \
   /usr/include/X11/extensions/Xinerama.h \
+  /usr/include/X11/extensions/xf86vmode.h \
+  /usr/include/X11/Xmd.h \
+  /usr/include/X11/extensions/xf86vm.h \
   ../CMU462/deps/glfw/src/posix_tls.h \
   /usr/include/pthread.h \
   /usr/include/sched.h \
@@ -244,6 +247,9 @@ CMU462/deps/glfw/src/CMakeFiles/glfw.dir/egl_context.c.o: ../CMU462/deps/glfw/sr
   /usr/include/X11/extensions/XKBstr.h \
   /usr/include/X11/extensions/XKB.h \
   /usr/include/X11/extensions/Xinerama.h \
+  /usr/include/X11/extensions/xf86vmode.h \
+  /usr/include/X11/Xmd.h \
+  /usr/include/X11/extensions/xf86vm.h \
   ../CMU462/deps/glfw/src/posix_tls.h \
   /usr/include/pthread.h \
   /usr/include/sched.h \
@@ -380,6 +386,9 @@ CMU462/deps/glfw/src/CMakeFiles/glfw.dir/glx_context.c.o: ../CMU462/deps/glfw/sr
   /usr/include/X11/extensions/XKBstr.h \
   /usr/include/X11/extensions/XKB.h \
   /usr/include/X11/extensions/Xinerama.h \
+  /usr/include/X11/extensions/xf86vmode.h \
+  /usr/include/X11/Xmd.h \
+  /usr/include/X11/extensions/xf86vm.h \
   ../CMU462/deps/glfw/src/posix_tls.h \
   /usr/include/pthread.h \
   /usr/include/sched.h \
@@ -516,6 +525,9 @@ CMU462/deps/glfw/src/CMakeFiles/glfw.dir/init.c.o: ../CMU462/deps/glfw/src/init.
   /usr/include/X11/extensions/XKBstr.h \
   /usr/include/X11/extensions/XKB.h \
   /usr/include/X11/extensions/Xinerama.h \
+  /usr/include/X11/extensions/xf86vmode.h \
+  /usr/include/X11/Xmd.h \
+  /usr/include/X11/extensions/xf86vm.h \
   ../CMU462/deps/glfw/src/posix_tls.h \
   /usr/include/pthread.h \
   /usr/include/sched.h \
@@ -651,6 +663,9 @@ CMU462/deps/glfw/src/CMakeFiles/glfw.dir/input.c.o: ../CMU462/deps/glfw/src/inpu
   /usr/include/X11/extensions/XKBstr.h \
   /usr/include/X11/extensions/XKB.h \
   /usr/include/X11/extensions/Xinerama.h \
+  /usr/include/X11/extensions/xf86vmode.h \
+  /usr/include/X11/Xmd.h \
+  /usr/include/X11/extensions/xf86vm.h \
   ../CMU462/deps/glfw/src/posix_tls.h \
   /usr/include/pthread.h \
   /usr/include/sched.h \
@@ -786,6 +801,9 @@ CMU462/deps/glfw/src/CMakeFiles/glfw.dir/linux_joystick.c.o: ../CMU462/deps/glfw
   /usr/include/X11/extensions/XKBstr.h \
   /usr/include/X11/extensions/XKB.h \
   /usr/include/X11/extensions/Xinerama.h \
+  /usr/include/X11/extensions/xf86vmode.h \
+  /usr/include/X11/Xmd.h \
+  /usr/include/X11/extensions/xf86vm.h \
   ../CMU462/deps/glfw/src/posix_tls.h \
   /usr/include/pthread.h \
   /usr/include/sched.h \
@@ -965,6 +983,9 @@ CMU462/deps/glfw/src/CMakeFiles/glfw.dir/monitor.c.o: ../CMU462/deps/glfw/src/mo
   /usr/include/X11/extensions/XKBstr.h \
   /usr/include/X11/extensions/XKB.h \
   /usr/include/X11/extensions/Xinerama.h \
+  /usr/include/X11/extensions/xf86vmode.h \
+  /usr/include/X11/Xmd.h \
+  /usr/include/X11/extensions/xf86vm.h \
   ../CMU462/deps/glfw/src/posix_tls.h \
   /usr/include/pthread.h \
   /usr/include/sched.h \
@@ -1117,6 +1138,9 @@ CMU462/deps/glfw/src/CMakeFiles/glfw.dir/posix_time.c.o: ../CMU462/deps/glfw/src
   /usr/include/X11/extensions/XKBstr.h \
   /usr/include/X11/extensions/XKB.h \
   /usr/include/X11/extensions/Xinerama.h \
+  /usr/include/X11/extensions/xf86vmode.h \
+  /usr/include/X11/Xmd.h \
+  /usr/include/X11/extensions/xf86vm.h \
   ../CMU462/deps/glfw/src/posix_tls.h \
   /usr/include/pthread.h \
   /usr/include/sched.h \
@@ -1246,6 +1270,9 @@ CMU462/deps/glfw/src/CMakeFiles/glfw.dir/posix_tls.c.o: ../CMU462/deps/glfw/src/
   /usr/include/X11/extensions/XKBstr.h \
   /usr/include/X11/extensions/XKB.h \
   /usr/include/X11/extensions/Xinerama.h \
+  /usr/include/X11/extensions/xf86vmode.h \
+  /usr/include/X11/Xmd.h \
+  /usr/include/X11/extensions/xf86vm.h \
   ../CMU462/deps/glfw/src/posix_tls.h \
   /usr/include/pthread.h \
   /usr/include/sched.h \
@@ -1374,6 +1401,9 @@ CMU462/deps/glfw/src/CMakeFiles/glfw.dir/vulkan.c.o: ../CMU462/deps/glfw/src/vul
   /usr/include/X11/extensions/XKBstr.h \
   /usr/include/X11/extensions/XKB.h \
   /usr/include/X11/extensions/Xinerama.h \
+  /usr/include/X11/extensions/xf86vmode.h \
+  /usr/include/X11/Xmd.h \
+  /usr/include/X11/extensions/xf86vm.h \
   ../CMU462/deps/glfw/src/posix_tls.h \
   /usr/include/pthread.h \
   /usr/include/sched.h \
@@ -1510,6 +1540,9 @@ CMU462/deps/glfw/src/CMakeFiles/glfw.dir/window.c.o: ../CMU462/deps/glfw/src/win
   /usr/include/X11/extensions/XKBstr.h \
   /usr/include/X11/extensions/XKB.h \
   /usr/include/X11/extensions/Xinerama.h \
+  /usr/include/X11/extensions/xf86vmode.h \
+  /usr/include/X11/Xmd.h \
+  /usr/include/X11/extensions/xf86vm.h \
   ../CMU462/deps/glfw/src/posix_tls.h \
   /usr/include/pthread.h \
   /usr/include/sched.h \
@@ -1647,6 +1680,9 @@ CMU462/deps/glfw/src/CMakeFiles/glfw.dir/x11_init.c.o: ../CMU462/deps/glfw/src/x
   /usr/include/X11/extensions/XKBstr.h \
   /usr/include/X11/extensions/XKB.h \
   /usr/include/X11/extensions/Xinerama.h \
+  /usr/include/X11/extensions/xf86vmode.h \
+  /usr/include/X11/Xmd.h \
+  /usr/include/X11/extensions/xf86vm.h \
   ../CMU462/deps/glfw/src/posix_tls.h \
   /usr/include/pthread.h \
   /usr/include/sched.h \
@@ -1792,6 +1828,9 @@ CMU462/deps/glfw/src/CMakeFiles/glfw.dir/x11_monitor.c.o: ../CMU462/deps/glfw/sr
   /usr/include/X11/extensions/XKBstr.h \
   /usr/include/X11/extensions/XKB.h \
   /usr/include/X11/extensions/Xinerama.h \
+  /usr/include/X11/extensions/xf86vmode.h \
+  /usr/include/X11/Xmd.h \
+  /usr/include/X11/extensions/xf86vm.h \
   ../CMU462/deps/glfw/src/posix_tls.h \
   /usr/include/pthread.h \
   /usr/include/sched.h \
@@ -1934,6 +1973,9 @@ CMU462/deps/glfw/src/CMakeFiles/glfw.dir/x11_window.c.o: ../CMU462/deps/glfw/src
   /usr/include/X11/extensions/XKBstr.h \
   /usr/include/X11/extensions/XKB.h \
   /usr/include/X11/extensions/Xinerama.h \
+  /usr/include/X11/extensions/xf86vmode.h \
+  /usr/include/X11/Xmd.h \
+  /usr/include/X11/extensions/xf86vm.h \
   ../CMU462/deps/glfw/src/posix_tls.h \
   /usr/include/pthread.h \
   /usr/include/sched.h \
@@ -1957,7 +1999,6 @@ CMU462/deps/glfw/src/CMakeFiles/glfw.dir/x11_window.c.o: ../CMU462/deps/glfw/src
   ../CMU462/deps/glfw/src/glx_context.h \
   ../CMU462/deps/glfw/src/egl_context.h \
   /usr/include/X11/cursorfont.h \
-  /usr/include/X11/Xmd.h \
   /usr/include/string.h \
   /usr/include/strings.h \
   /usr/include/stdlib.h \
@@ -2085,6 +2126,9 @@ CMU462/deps/glfw/src/CMakeFiles/glfw.dir/xkb_unicode.c.o: ../CMU462/deps/glfw/sr
   /usr/include/X11/extensions/XKBstr.h \
   /usr/include/X11/extensions/XKB.h \
   /usr/include/X11/extensions/Xinerama.h \
+  /usr/include/X11/extensions/xf86vmode.h \
+  /usr/include/X11/Xmd.h \
+  /usr/include/X11/extensions/xf86vm.h \
   ../CMU462/deps/glfw/src/posix_tls.h \
   /usr/include/pthread.h \
   /usr/include/sched.h \
@@ -2155,10 +2199,6 @@ CMU462/deps/glfw/src/CMakeFiles/glfw.dir/xkb_unicode.c.o: ../CMU462/deps/glfw/sr
 
 /usr/include/x86_64-linux-gnu/bits/ioctl-types.h:
 
-../CMU462/deps/glfw/src/posix_tls.c:
-
-/usr/include/asm-generic/ioctl.h:
-
 /usr/include/x86_64-linux-gnu/asm/ioctl.h:
 
 /usr/include/asm-generic/ioctls.h:
@@ -2221,6 +2261,14 @@ CMU462/deps/glfw/src/CMakeFiles/glfw.dir/xkb_unicode.c.o: ../CMU462/deps/glfw/sr
 
 /usr/include/assert.h:
 
+../CMU462/deps/glfw/src/egl_context.h:
+
+../CMU462/deps/glfw/src/glx_context.h:
+
+../CMU462/deps/glfw/src/x11_window.c:
+
+../CMU462/deps/glfw/src/xkb_unicode.h:
+
 /usr/include/x86_64-linux-gnu/sys/inotify.h:
 
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
@@ -2232,6 +2280,12 @@ CMU462/deps/glfw/src/CMakeFiles/glfw.dir/xkb_unicode.c.o: ../CMU462/deps/glfw/sr
 /usr/include/x86_64-linux-gnu/bits/sigaction.h:
 
 ../CMU462/deps/glfw/src/context.c:
+
+../CMU462/deps/glfw/src/posix_tls.c:
+
+/usr/include/asm-generic/ioctl.h:
+
+/usr/include/X11/extensions/xf86vmode.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/time_t.h:
 
@@ -2270,10 +2324,6 @@ CMU462/deps/glfw/src/CMakeFiles/glfw.dir/xkb_unicode.c.o: ../CMU462/deps/glfw/sr
 /usr/include/errno.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__sigval_t.h:
-
-/usr/include/X11/Xmd.h:
-
-/usr/include/x86_64-linux-gnu/bits/timesize.h:
 
 /usr/include/features-time64.h:
 
@@ -2335,6 +2385,10 @@ CMU462/deps/glfw/src/glfw_config.h:
 
 /usr/include/x86_64-linux-gnu/bits/environments.h:
 
+/usr/include/x86_64-linux-gnu/bits/timesize.h:
+
+/usr/include/X11/Xmd.h:
+
 /usr/include/x86_64-linux-gnu/bits/wordsize.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/stack_t.h:
@@ -2380,10 +2434,6 @@ CMU462/deps/glfw/src/glfw_config.h:
 /usr/include/x86_64-linux-gnu/bits/sigthread.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
-
-../CMU462/deps/glfw/src/x11_window.c:
-
-../CMU462/deps/glfw/src/xkb_unicode.h:
 
 /usr/include/x86_64-linux-gnu/sys/select.h:
 
@@ -2465,8 +2515,6 @@ CMU462/deps/glfw/src/glfw_config.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
-
 /usr/include/signal.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
@@ -2507,6 +2555,10 @@ CMU462/deps/glfw/src/glfw_config.h:
 
 /usr/include/X11/extensions/XKB.h:
 
+/usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
+
+/usr/include/X11/extensions/xf86vm.h:
+
 ../CMU462/deps/glfw/src/posix_tls.h:
 
 /usr/include/pthread.h:
@@ -2526,7 +2578,3 @@ CMU462/deps/glfw/src/glfw_config.h:
 /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/setjmp.h:
-
-../CMU462/deps/glfw/src/glx_context.h:
-
-../CMU462/deps/glfw/src/egl_context.h:

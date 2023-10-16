@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/arron/computer-graphics/homework-1/DrawSVG/src/hardware/hardware_renderer.cpp" "src/CMakeFiles/drawsvg_hdwr.dir/hardware/hardware_renderer.cpp.o" "gcc" "src/CMakeFiles/drawsvg_hdwr.dir/hardware/hardware_renderer.cpp.o.d"
+  "/home/arron/computer-graphics/DrawSVG/src/hardware/hardware_renderer.cpp" "src/CMakeFiles/drawsvg_hdwr.dir/hardware/hardware_renderer.cpp.o" "gcc" "src/CMakeFiles/drawsvg_hdwr.dir/hardware/hardware_renderer.cpp.o.d"
   )
 
 # Targets to which this target links.

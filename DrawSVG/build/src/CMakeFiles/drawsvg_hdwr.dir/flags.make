@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/arron/computer-graphics/homework-1/DrawSVG/CMU462/include -I/home/arron/computer-graphics/homework-1/DrawSVG/CMU462/include/CMU462 -I/usr/include/freetype2 -I/home/arron/computer-graphics/homework-1/DrawSVG/src
+CXX_INCLUDES = -I/home/arron/computer-graphics/DrawSVG/CMU462/include -I/home/arron/computer-graphics/DrawSVG/CMU462/include/CMU462 -I/usr/include/freetype2 -I/home/arron/computer-graphics/DrawSVG/src
 
 CXX_FLAGS =  -std=gnu++11 -m64 -O3 -fopenmp
 

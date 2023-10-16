@@ -1,7 +1,7 @@
 src/CMakeFiles/drawsvg.dir/software_renderer.cpp.o: \
- /home/arron/computer-graphics/homework-1/DrawSVG/src/software_renderer.cpp \
+ /home/arron/computer-graphics/DrawSVG/src/software_renderer.cpp \
  /usr/include/stdc-predef.h \
- /home/arron/computer-graphics/homework-1/DrawSVG/src/software_renderer.h \
+ /home/arron/computer-graphics/DrawSVG/src/software_renderer.h \
  /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -62,8 +62,8 @@ src/CMakeFiles/drawsvg.dir/software_renderer.cpp.o: \
  /usr/include/c++/11/bits/hash_bytes.h \
  /usr/include/c++/11/bits/range_access.h \
  /usr/include/c++/11/bits/vector.tcc \
- /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/include/CMU462/CMU462.h \
- /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/include/CMU462/misc.h \
+ /home/arron/computer-graphics/DrawSVG/CMU462/include/CMU462/CMU462.h \
+ /home/arron/computer-graphics/DrawSVG/CMU462/include/CMU462/misc.h \
  /usr/include/c++/11/cmath /usr/include/math.h \
  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
@@ -112,10 +112,10 @@ src/CMakeFiles/drawsvg.dir/software_renderer.cpp.o: \
  /usr/include/c++/11/bits/stl_heap.h \
  /usr/include/c++/11/bits/stl_tempbuf.h \
  /usr/include/c++/11/bits/uniform_int_dist.h \
- /home/arron/computer-graphics/homework-1/DrawSVG/src/texture.h \
- /home/arron/computer-graphics/homework-1/DrawSVG/src/svg_renderer.h \
- /home/arron/computer-graphics/homework-1/DrawSVG/src/svg.h \
- /usr/include/c++/11/map /usr/include/c++/11/bits/stl_tree.h \
+ /home/arron/computer-graphics/DrawSVG/src/texture.h \
+ /home/arron/computer-graphics/DrawSVG/src/svg_renderer.h \
+ /home/arron/computer-graphics/DrawSVG/src/svg.h /usr/include/c++/11/map \
+ /usr/include/c++/11/bits/stl_tree.h \
  /usr/include/c++/11/bits/stl_function.h \
  /usr/include/c++/11/backward/binders.h \
  /usr/include/c++/11/ext/aligned_buffer.h \
@@ -124,8 +124,8 @@ src/CMakeFiles/drawsvg.dir/software_renderer.cpp.o: \
  /usr/include/c++/11/bits/invoke.h \
  /usr/include/c++/11/bits/stl_multimap.h \
  /usr/include/c++/11/bits/erase_if.h \
- /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/include/CMU462/color.h \
- /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/include/CMU462/CMU462.h \
+ /home/arron/computer-graphics/DrawSVG/CMU462/include/CMU462/color.h \
+ /home/arron/computer-graphics/DrawSVG/CMU462/include/CMU462/CMU462.h \
  /usr/include/c++/11/string /usr/include/c++/11/bits/stringfwd.h \
  /usr/include/c++/11/bits/char_traits.h \
  /usr/include/c++/11/bits/postypes.h /usr/include/c++/11/cwchar \
@@ -167,7 +167,7 @@ src/CMakeFiles/drawsvg.dir/software_renderer.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
  /usr/include/c++/11/bits/charconv.h \
  /usr/include/c++/11/bits/basic_string.tcc \
- /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/include/CMU462/vector2D.h \
+ /home/arron/computer-graphics/DrawSVG/CMU462/include/CMU462/vector2D.h \
  /usr/include/c++/11/ostream /usr/include/c++/11/ios \
  /usr/include/c++/11/exception /usr/include/c++/11/bits/exception_ptr.h \
  /usr/include/c++/11/bits/cxxabi_init_exception.h \
@@ -188,9 +188,9 @@ src/CMakeFiles/drawsvg.dir/software_renderer.cpp.o: \
  /usr/include/c++/11/bits/locale_facets.tcc \
  /usr/include/c++/11/bits/basic_ios.tcc \
  /usr/include/c++/11/bits/ostream.tcc \
- /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/include/CMU462/matrix3x3.h \
- /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/include/CMU462/vector3D.h \
- /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/include/CMU462/tinyxml2.h \
+ /home/arron/computer-graphics/DrawSVG/CMU462/include/CMU462/matrix3x3.h \
+ /home/arron/computer-graphics/DrawSVG/CMU462/include/CMU462/vector3D.h \
+ /home/arron/computer-graphics/DrawSVG/CMU462/include/CMU462/tinyxml2.h \
  /usr/include/c++/11/climits \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h \
@@ -204,7 +204,9 @@ src/CMakeFiles/drawsvg.dir/software_renderer.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
  /usr/include/x86_64-linux-gnu/bits/string_fortified.h \
  /usr/include/c++/11/cstdarg \
- /home/arron/computer-graphics/homework-1/DrawSVG/src/viewport.h \
+ /home/arron/computer-graphics/DrawSVG/src/viewport.h \
  /usr/include/c++/11/iostream /usr/include/c++/11/istream \
- /usr/include/c++/11/bits/istream.tcc \
- /home/arron/computer-graphics/homework-1/DrawSVG/src/triangulation.h
+ /usr/include/c++/11/bits/istream.tcc /usr/include/c++/11/functional \
+ /usr/include/c++/11/bits/refwrap.h \
+ /usr/include/c++/11/bits/std_function.h \
+ /home/arron/computer-graphics/DrawSVG/src/triangulation.h

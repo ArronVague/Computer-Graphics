@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/arron/computer-graphics/homework-1/DrawSVG
+CMAKE_SOURCE_DIR = /home/arron/computer-graphics/DrawSVG
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/arron/computer-graphics/homework-1/DrawSVG/build
+CMAKE_BINARY_DIR = /home/arron/computer-graphics/DrawSVG/build
 
 # Include any dependencies generated for this target.
 include CMU462/deps/glfw/tests/CMakeFiles/glfwinfo.dir/depend.make
@@ -72,44 +72,44 @@ include CMU462/deps/glfw/tests/CMakeFiles/glfwinfo.dir/flags.make
 CMU462/deps/glfw/tests/CMakeFiles/glfwinfo.dir/glfwinfo.c.o: CMU462/deps/glfw/tests/CMakeFiles/glfwinfo.dir/flags.make
 CMU462/deps/glfw/tests/CMakeFiles/glfwinfo.dir/glfwinfo.c.o: ../CMU462/deps/glfw/tests/glfwinfo.c
 CMU462/deps/glfw/tests/CMakeFiles/glfwinfo.dir/glfwinfo.c.o: CMU462/deps/glfw/tests/CMakeFiles/glfwinfo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/arron/computer-graphics/homework-1/DrawSVG/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMU462/deps/glfw/tests/CMakeFiles/glfwinfo.dir/glfwinfo.c.o"
-	cd /home/arron/computer-graphics/homework-1/DrawSVG/build/CMU462/deps/glfw/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMU462/deps/glfw/tests/CMakeFiles/glfwinfo.dir/glfwinfo.c.o -MF CMakeFiles/glfwinfo.dir/glfwinfo.c.o.d -o CMakeFiles/glfwinfo.dir/glfwinfo.c.o -c /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/deps/glfw/tests/glfwinfo.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/arron/computer-graphics/DrawSVG/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMU462/deps/glfw/tests/CMakeFiles/glfwinfo.dir/glfwinfo.c.o"
+	cd /home/arron/computer-graphics/DrawSVG/build/CMU462/deps/glfw/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMU462/deps/glfw/tests/CMakeFiles/glfwinfo.dir/glfwinfo.c.o -MF CMakeFiles/glfwinfo.dir/glfwinfo.c.o.d -o CMakeFiles/glfwinfo.dir/glfwinfo.c.o -c /home/arron/computer-graphics/DrawSVG/CMU462/deps/glfw/tests/glfwinfo.c
 
 CMU462/deps/glfw/tests/CMakeFiles/glfwinfo.dir/glfwinfo.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/glfwinfo.dir/glfwinfo.c.i"
-	cd /home/arron/computer-graphics/homework-1/DrawSVG/build/CMU462/deps/glfw/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/deps/glfw/tests/glfwinfo.c > CMakeFiles/glfwinfo.dir/glfwinfo.c.i
+	cd /home/arron/computer-graphics/DrawSVG/build/CMU462/deps/glfw/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/arron/computer-graphics/DrawSVG/CMU462/deps/glfw/tests/glfwinfo.c > CMakeFiles/glfwinfo.dir/glfwinfo.c.i
 
 CMU462/deps/glfw/tests/CMakeFiles/glfwinfo.dir/glfwinfo.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/glfwinfo.dir/glfwinfo.c.s"
-	cd /home/arron/computer-graphics/homework-1/DrawSVG/build/CMU462/deps/glfw/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/deps/glfw/tests/glfwinfo.c -o CMakeFiles/glfwinfo.dir/glfwinfo.c.s
+	cd /home/arron/computer-graphics/DrawSVG/build/CMU462/deps/glfw/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/arron/computer-graphics/DrawSVG/CMU462/deps/glfw/tests/glfwinfo.c -o CMakeFiles/glfwinfo.dir/glfwinfo.c.s
 
 CMU462/deps/glfw/tests/CMakeFiles/glfwinfo.dir/__/deps/getopt.c.o: CMU462/deps/glfw/tests/CMakeFiles/glfwinfo.dir/flags.make
 CMU462/deps/glfw/tests/CMakeFiles/glfwinfo.dir/__/deps/getopt.c.o: ../CMU462/deps/glfw/deps/getopt.c
 CMU462/deps/glfw/tests/CMakeFiles/glfwinfo.dir/__/deps/getopt.c.o: CMU462/deps/glfw/tests/CMakeFiles/glfwinfo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/arron/computer-graphics/homework-1/DrawSVG/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMU462/deps/glfw/tests/CMakeFiles/glfwinfo.dir/__/deps/getopt.c.o"
-	cd /home/arron/computer-graphics/homework-1/DrawSVG/build/CMU462/deps/glfw/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMU462/deps/glfw/tests/CMakeFiles/glfwinfo.dir/__/deps/getopt.c.o -MF CMakeFiles/glfwinfo.dir/__/deps/getopt.c.o.d -o CMakeFiles/glfwinfo.dir/__/deps/getopt.c.o -c /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/deps/glfw/deps/getopt.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/arron/computer-graphics/DrawSVG/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMU462/deps/glfw/tests/CMakeFiles/glfwinfo.dir/__/deps/getopt.c.o"
+	cd /home/arron/computer-graphics/DrawSVG/build/CMU462/deps/glfw/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMU462/deps/glfw/tests/CMakeFiles/glfwinfo.dir/__/deps/getopt.c.o -MF CMakeFiles/glfwinfo.dir/__/deps/getopt.c.o.d -o CMakeFiles/glfwinfo.dir/__/deps/getopt.c.o -c /home/arron/computer-graphics/DrawSVG/CMU462/deps/glfw/deps/getopt.c
 
 CMU462/deps/glfw/tests/CMakeFiles/glfwinfo.dir/__/deps/getopt.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/glfwinfo.dir/__/deps/getopt.c.i"
-	cd /home/arron/computer-graphics/homework-1/DrawSVG/build/CMU462/deps/glfw/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/deps/glfw/deps/getopt.c > CMakeFiles/glfwinfo.dir/__/deps/getopt.c.i
+	cd /home/arron/computer-graphics/DrawSVG/build/CMU462/deps/glfw/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/arron/computer-graphics/DrawSVG/CMU462/deps/glfw/deps/getopt.c > CMakeFiles/glfwinfo.dir/__/deps/getopt.c.i
 
 CMU462/deps/glfw/tests/CMakeFiles/glfwinfo.dir/__/deps/getopt.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/glfwinfo.dir/__/deps/getopt.c.s"
-	cd /home/arron/computer-graphics/homework-1/DrawSVG/build/CMU462/deps/glfw/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/deps/glfw/deps/getopt.c -o CMakeFiles/glfwinfo.dir/__/deps/getopt.c.s
+	cd /home/arron/computer-graphics/DrawSVG/build/CMU462/deps/glfw/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/arron/computer-graphics/DrawSVG/CMU462/deps/glfw/deps/getopt.c -o CMakeFiles/glfwinfo.dir/__/deps/getopt.c.s
 
 CMU462/deps/glfw/tests/CMakeFiles/glfwinfo.dir/__/deps/glad.c.o: CMU462/deps/glfw/tests/CMakeFiles/glfwinfo.dir/flags.make
 CMU462/deps/glfw/tests/CMakeFiles/glfwinfo.dir/__/deps/glad.c.o: ../CMU462/deps/glfw/deps/glad.c
 CMU462/deps/glfw/tests/CMakeFiles/glfwinfo.dir/__/deps/glad.c.o: CMU462/deps/glfw/tests/CMakeFiles/glfwinfo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/arron/computer-graphics/homework-1/DrawSVG/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMU462/deps/glfw/tests/CMakeFiles/glfwinfo.dir/__/deps/glad.c.o"
-	cd /home/arron/computer-graphics/homework-1/DrawSVG/build/CMU462/deps/glfw/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMU462/deps/glfw/tests/CMakeFiles/glfwinfo.dir/__/deps/glad.c.o -MF CMakeFiles/glfwinfo.dir/__/deps/glad.c.o.d -o CMakeFiles/glfwinfo.dir/__/deps/glad.c.o -c /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/deps/glfw/deps/glad.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/arron/computer-graphics/DrawSVG/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMU462/deps/glfw/tests/CMakeFiles/glfwinfo.dir/__/deps/glad.c.o"
+	cd /home/arron/computer-graphics/DrawSVG/build/CMU462/deps/glfw/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMU462/deps/glfw/tests/CMakeFiles/glfwinfo.dir/__/deps/glad.c.o -MF CMakeFiles/glfwinfo.dir/__/deps/glad.c.o.d -o CMakeFiles/glfwinfo.dir/__/deps/glad.c.o -c /home/arron/computer-graphics/DrawSVG/CMU462/deps/glfw/deps/glad.c
 
 CMU462/deps/glfw/tests/CMakeFiles/glfwinfo.dir/__/deps/glad.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/glfwinfo.dir/__/deps/glad.c.i"
-	cd /home/arron/computer-graphics/homework-1/DrawSVG/build/CMU462/deps/glfw/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/deps/glfw/deps/glad.c > CMakeFiles/glfwinfo.dir/__/deps/glad.c.i
+	cd /home/arron/computer-graphics/DrawSVG/build/CMU462/deps/glfw/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/arron/computer-graphics/DrawSVG/CMU462/deps/glfw/deps/glad.c > CMakeFiles/glfwinfo.dir/__/deps/glad.c.i
 
 CMU462/deps/glfw/tests/CMakeFiles/glfwinfo.dir/__/deps/glad.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/glfwinfo.dir/__/deps/glad.c.s"
-	cd /home/arron/computer-graphics/homework-1/DrawSVG/build/CMU462/deps/glfw/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/deps/glfw/deps/glad.c -o CMakeFiles/glfwinfo.dir/__/deps/glad.c.s
+	cd /home/arron/computer-graphics/DrawSVG/build/CMU462/deps/glfw/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/arron/computer-graphics/DrawSVG/CMU462/deps/glfw/deps/glad.c -o CMakeFiles/glfwinfo.dir/__/deps/glad.c.s
 
 # Object files for target glfwinfo
 glfwinfo_OBJECTS = \
@@ -130,20 +130,21 @@ CMU462/deps/glfw/tests/glfwinfo: /usr/lib/x86_64-linux-gnu/libm.so
 CMU462/deps/glfw/tests/glfwinfo: /usr/lib/x86_64-linux-gnu/libX11.so
 CMU462/deps/glfw/tests/glfwinfo: /usr/lib/x86_64-linux-gnu/libXrandr.so
 CMU462/deps/glfw/tests/glfwinfo: /usr/lib/x86_64-linux-gnu/libXinerama.so
+CMU462/deps/glfw/tests/glfwinfo: /usr/lib/x86_64-linux-gnu/libXxf86vm.so
 CMU462/deps/glfw/tests/glfwinfo: /usr/lib/x86_64-linux-gnu/libXcursor.so
 CMU462/deps/glfw/tests/glfwinfo: CMU462/deps/glfw/tests/CMakeFiles/glfwinfo.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/arron/computer-graphics/homework-1/DrawSVG/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable glfwinfo"
-	cd /home/arron/computer-graphics/homework-1/DrawSVG/build/CMU462/deps/glfw/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/glfwinfo.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/arron/computer-graphics/DrawSVG/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable glfwinfo"
+	cd /home/arron/computer-graphics/DrawSVG/build/CMU462/deps/glfw/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/glfwinfo.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 CMU462/deps/glfw/tests/CMakeFiles/glfwinfo.dir/build: CMU462/deps/glfw/tests/glfwinfo
 .PHONY : CMU462/deps/glfw/tests/CMakeFiles/glfwinfo.dir/build
 
 CMU462/deps/glfw/tests/CMakeFiles/glfwinfo.dir/clean:
-	cd /home/arron/computer-graphics/homework-1/DrawSVG/build/CMU462/deps/glfw/tests && $(CMAKE_COMMAND) -P CMakeFiles/glfwinfo.dir/cmake_clean.cmake
+	cd /home/arron/computer-graphics/DrawSVG/build/CMU462/deps/glfw/tests && $(CMAKE_COMMAND) -P CMakeFiles/glfwinfo.dir/cmake_clean.cmake
 .PHONY : CMU462/deps/glfw/tests/CMakeFiles/glfwinfo.dir/clean
 
 CMU462/deps/glfw/tests/CMakeFiles/glfwinfo.dir/depend:
-	cd /home/arron/computer-graphics/homework-1/DrawSVG/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/arron/computer-graphics/homework-1/DrawSVG /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/deps/glfw/tests /home/arron/computer-graphics/homework-1/DrawSVG/build /home/arron/computer-graphics/homework-1/DrawSVG/build/CMU462/deps/glfw/tests /home/arron/computer-graphics/homework-1/DrawSVG/build/CMU462/deps/glfw/tests/CMakeFiles/glfwinfo.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/arron/computer-graphics/DrawSVG/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/arron/computer-graphics/DrawSVG /home/arron/computer-graphics/DrawSVG/CMU462/deps/glfw/tests /home/arron/computer-graphics/DrawSVG/build /home/arron/computer-graphics/DrawSVG/build/CMU462/deps/glfw/tests /home/arron/computer-graphics/DrawSVG/build/CMU462/deps/glfw/tests/CMakeFiles/glfwinfo.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMU462/deps/glfw/tests/CMakeFiles/glfwinfo.dir/depend
 

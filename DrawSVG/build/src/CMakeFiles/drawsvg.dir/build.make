@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/arron/computer-graphics/homework-1/DrawSVG
+CMAKE_SOURCE_DIR = /home/arron/computer-graphics/DrawSVG
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/arron/computer-graphics/homework-1/DrawSVG/build
+CMAKE_BINARY_DIR = /home/arron/computer-graphics/DrawSVG/build
 
 # Include any dependencies generated for this target.
 include src/CMakeFiles/drawsvg.dir/depend.make
@@ -72,114 +72,114 @@ include src/CMakeFiles/drawsvg.dir/flags.make
 src/CMakeFiles/drawsvg.dir/svg.cpp.o: src/CMakeFiles/drawsvg.dir/flags.make
 src/CMakeFiles/drawsvg.dir/svg.cpp.o: ../src/svg.cpp
 src/CMakeFiles/drawsvg.dir/svg.cpp.o: src/CMakeFiles/drawsvg.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/arron/computer-graphics/homework-1/DrawSVG/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/drawsvg.dir/svg.cpp.o"
-	cd /home/arron/computer-graphics/homework-1/DrawSVG/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/drawsvg.dir/svg.cpp.o -MF CMakeFiles/drawsvg.dir/svg.cpp.o.d -o CMakeFiles/drawsvg.dir/svg.cpp.o -c /home/arron/computer-graphics/homework-1/DrawSVG/src/svg.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/arron/computer-graphics/DrawSVG/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/drawsvg.dir/svg.cpp.o"
+	cd /home/arron/computer-graphics/DrawSVG/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/drawsvg.dir/svg.cpp.o -MF CMakeFiles/drawsvg.dir/svg.cpp.o.d -o CMakeFiles/drawsvg.dir/svg.cpp.o -c /home/arron/computer-graphics/DrawSVG/src/svg.cpp
 
 src/CMakeFiles/drawsvg.dir/svg.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/drawsvg.dir/svg.cpp.i"
-	cd /home/arron/computer-graphics/homework-1/DrawSVG/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/arron/computer-graphics/homework-1/DrawSVG/src/svg.cpp > CMakeFiles/drawsvg.dir/svg.cpp.i
+	cd /home/arron/computer-graphics/DrawSVG/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/arron/computer-graphics/DrawSVG/src/svg.cpp > CMakeFiles/drawsvg.dir/svg.cpp.i
 
 src/CMakeFiles/drawsvg.dir/svg.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/drawsvg.dir/svg.cpp.s"
-	cd /home/arron/computer-graphics/homework-1/DrawSVG/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/arron/computer-graphics/homework-1/DrawSVG/src/svg.cpp -o CMakeFiles/drawsvg.dir/svg.cpp.s
+	cd /home/arron/computer-graphics/DrawSVG/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/arron/computer-graphics/DrawSVG/src/svg.cpp -o CMakeFiles/drawsvg.dir/svg.cpp.s
 
 src/CMakeFiles/drawsvg.dir/png.cpp.o: src/CMakeFiles/drawsvg.dir/flags.make
 src/CMakeFiles/drawsvg.dir/png.cpp.o: ../src/png.cpp
 src/CMakeFiles/drawsvg.dir/png.cpp.o: src/CMakeFiles/drawsvg.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/arron/computer-graphics/homework-1/DrawSVG/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/drawsvg.dir/png.cpp.o"
-	cd /home/arron/computer-graphics/homework-1/DrawSVG/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/drawsvg.dir/png.cpp.o -MF CMakeFiles/drawsvg.dir/png.cpp.o.d -o CMakeFiles/drawsvg.dir/png.cpp.o -c /home/arron/computer-graphics/homework-1/DrawSVG/src/png.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/arron/computer-graphics/DrawSVG/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/drawsvg.dir/png.cpp.o"
+	cd /home/arron/computer-graphics/DrawSVG/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/drawsvg.dir/png.cpp.o -MF CMakeFiles/drawsvg.dir/png.cpp.o.d -o CMakeFiles/drawsvg.dir/png.cpp.o -c /home/arron/computer-graphics/DrawSVG/src/png.cpp
 
 src/CMakeFiles/drawsvg.dir/png.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/drawsvg.dir/png.cpp.i"
-	cd /home/arron/computer-graphics/homework-1/DrawSVG/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/arron/computer-graphics/homework-1/DrawSVG/src/png.cpp > CMakeFiles/drawsvg.dir/png.cpp.i
+	cd /home/arron/computer-graphics/DrawSVG/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/arron/computer-graphics/DrawSVG/src/png.cpp > CMakeFiles/drawsvg.dir/png.cpp.i
 
 src/CMakeFiles/drawsvg.dir/png.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/drawsvg.dir/png.cpp.s"
-	cd /home/arron/computer-graphics/homework-1/DrawSVG/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/arron/computer-graphics/homework-1/DrawSVG/src/png.cpp -o CMakeFiles/drawsvg.dir/png.cpp.s
+	cd /home/arron/computer-graphics/DrawSVG/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/arron/computer-graphics/DrawSVG/src/png.cpp -o CMakeFiles/drawsvg.dir/png.cpp.s
 
 src/CMakeFiles/drawsvg.dir/texture.cpp.o: src/CMakeFiles/drawsvg.dir/flags.make
 src/CMakeFiles/drawsvg.dir/texture.cpp.o: ../src/texture.cpp
 src/CMakeFiles/drawsvg.dir/texture.cpp.o: src/CMakeFiles/drawsvg.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/arron/computer-graphics/homework-1/DrawSVG/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/drawsvg.dir/texture.cpp.o"
-	cd /home/arron/computer-graphics/homework-1/DrawSVG/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/drawsvg.dir/texture.cpp.o -MF CMakeFiles/drawsvg.dir/texture.cpp.o.d -o CMakeFiles/drawsvg.dir/texture.cpp.o -c /home/arron/computer-graphics/homework-1/DrawSVG/src/texture.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/arron/computer-graphics/DrawSVG/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/drawsvg.dir/texture.cpp.o"
+	cd /home/arron/computer-graphics/DrawSVG/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/drawsvg.dir/texture.cpp.o -MF CMakeFiles/drawsvg.dir/texture.cpp.o.d -o CMakeFiles/drawsvg.dir/texture.cpp.o -c /home/arron/computer-graphics/DrawSVG/src/texture.cpp
 
 src/CMakeFiles/drawsvg.dir/texture.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/drawsvg.dir/texture.cpp.i"
-	cd /home/arron/computer-graphics/homework-1/DrawSVG/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/arron/computer-graphics/homework-1/DrawSVG/src/texture.cpp > CMakeFiles/drawsvg.dir/texture.cpp.i
+	cd /home/arron/computer-graphics/DrawSVG/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/arron/computer-graphics/DrawSVG/src/texture.cpp > CMakeFiles/drawsvg.dir/texture.cpp.i
 
 src/CMakeFiles/drawsvg.dir/texture.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/drawsvg.dir/texture.cpp.s"
-	cd /home/arron/computer-graphics/homework-1/DrawSVG/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/arron/computer-graphics/homework-1/DrawSVG/src/texture.cpp -o CMakeFiles/drawsvg.dir/texture.cpp.s
+	cd /home/arron/computer-graphics/DrawSVG/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/arron/computer-graphics/DrawSVG/src/texture.cpp -o CMakeFiles/drawsvg.dir/texture.cpp.s
 
 src/CMakeFiles/drawsvg.dir/viewport.cpp.o: src/CMakeFiles/drawsvg.dir/flags.make
 src/CMakeFiles/drawsvg.dir/viewport.cpp.o: ../src/viewport.cpp
 src/CMakeFiles/drawsvg.dir/viewport.cpp.o: src/CMakeFiles/drawsvg.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/arron/computer-graphics/homework-1/DrawSVG/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/CMakeFiles/drawsvg.dir/viewport.cpp.o"
-	cd /home/arron/computer-graphics/homework-1/DrawSVG/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/drawsvg.dir/viewport.cpp.o -MF CMakeFiles/drawsvg.dir/viewport.cpp.o.d -o CMakeFiles/drawsvg.dir/viewport.cpp.o -c /home/arron/computer-graphics/homework-1/DrawSVG/src/viewport.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/arron/computer-graphics/DrawSVG/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/CMakeFiles/drawsvg.dir/viewport.cpp.o"
+	cd /home/arron/computer-graphics/DrawSVG/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/drawsvg.dir/viewport.cpp.o -MF CMakeFiles/drawsvg.dir/viewport.cpp.o.d -o CMakeFiles/drawsvg.dir/viewport.cpp.o -c /home/arron/computer-graphics/DrawSVG/src/viewport.cpp
 
 src/CMakeFiles/drawsvg.dir/viewport.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/drawsvg.dir/viewport.cpp.i"
-	cd /home/arron/computer-graphics/homework-1/DrawSVG/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/arron/computer-graphics/homework-1/DrawSVG/src/viewport.cpp > CMakeFiles/drawsvg.dir/viewport.cpp.i
+	cd /home/arron/computer-graphics/DrawSVG/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/arron/computer-graphics/DrawSVG/src/viewport.cpp > CMakeFiles/drawsvg.dir/viewport.cpp.i
 
 src/CMakeFiles/drawsvg.dir/viewport.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/drawsvg.dir/viewport.cpp.s"
-	cd /home/arron/computer-graphics/homework-1/DrawSVG/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/arron/computer-graphics/homework-1/DrawSVG/src/viewport.cpp -o CMakeFiles/drawsvg.dir/viewport.cpp.s
+	cd /home/arron/computer-graphics/DrawSVG/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/arron/computer-graphics/DrawSVG/src/viewport.cpp -o CMakeFiles/drawsvg.dir/viewport.cpp.s
 
 src/CMakeFiles/drawsvg.dir/triangulation.cpp.o: src/CMakeFiles/drawsvg.dir/flags.make
 src/CMakeFiles/drawsvg.dir/triangulation.cpp.o: ../src/triangulation.cpp
 src/CMakeFiles/drawsvg.dir/triangulation.cpp.o: src/CMakeFiles/drawsvg.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/arron/computer-graphics/homework-1/DrawSVG/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/CMakeFiles/drawsvg.dir/triangulation.cpp.o"
-	cd /home/arron/computer-graphics/homework-1/DrawSVG/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/drawsvg.dir/triangulation.cpp.o -MF CMakeFiles/drawsvg.dir/triangulation.cpp.o.d -o CMakeFiles/drawsvg.dir/triangulation.cpp.o -c /home/arron/computer-graphics/homework-1/DrawSVG/src/triangulation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/arron/computer-graphics/DrawSVG/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/CMakeFiles/drawsvg.dir/triangulation.cpp.o"
+	cd /home/arron/computer-graphics/DrawSVG/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/drawsvg.dir/triangulation.cpp.o -MF CMakeFiles/drawsvg.dir/triangulation.cpp.o.d -o CMakeFiles/drawsvg.dir/triangulation.cpp.o -c /home/arron/computer-graphics/DrawSVG/src/triangulation.cpp
 
 src/CMakeFiles/drawsvg.dir/triangulation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/drawsvg.dir/triangulation.cpp.i"
-	cd /home/arron/computer-graphics/homework-1/DrawSVG/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/arron/computer-graphics/homework-1/DrawSVG/src/triangulation.cpp > CMakeFiles/drawsvg.dir/triangulation.cpp.i
+	cd /home/arron/computer-graphics/DrawSVG/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/arron/computer-graphics/DrawSVG/src/triangulation.cpp > CMakeFiles/drawsvg.dir/triangulation.cpp.i
 
 src/CMakeFiles/drawsvg.dir/triangulation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/drawsvg.dir/triangulation.cpp.s"
-	cd /home/arron/computer-graphics/homework-1/DrawSVG/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/arron/computer-graphics/homework-1/DrawSVG/src/triangulation.cpp -o CMakeFiles/drawsvg.dir/triangulation.cpp.s
+	cd /home/arron/computer-graphics/DrawSVG/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/arron/computer-graphics/DrawSVG/src/triangulation.cpp -o CMakeFiles/drawsvg.dir/triangulation.cpp.s
 
 src/CMakeFiles/drawsvg.dir/software_renderer.cpp.o: src/CMakeFiles/drawsvg.dir/flags.make
 src/CMakeFiles/drawsvg.dir/software_renderer.cpp.o: ../src/software_renderer.cpp
 src/CMakeFiles/drawsvg.dir/software_renderer.cpp.o: src/CMakeFiles/drawsvg.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/arron/computer-graphics/homework-1/DrawSVG/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object src/CMakeFiles/drawsvg.dir/software_renderer.cpp.o"
-	cd /home/arron/computer-graphics/homework-1/DrawSVG/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/drawsvg.dir/software_renderer.cpp.o -MF CMakeFiles/drawsvg.dir/software_renderer.cpp.o.d -o CMakeFiles/drawsvg.dir/software_renderer.cpp.o -c /home/arron/computer-graphics/homework-1/DrawSVG/src/software_renderer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/arron/computer-graphics/DrawSVG/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object src/CMakeFiles/drawsvg.dir/software_renderer.cpp.o"
+	cd /home/arron/computer-graphics/DrawSVG/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/drawsvg.dir/software_renderer.cpp.o -MF CMakeFiles/drawsvg.dir/software_renderer.cpp.o.d -o CMakeFiles/drawsvg.dir/software_renderer.cpp.o -c /home/arron/computer-graphics/DrawSVG/src/software_renderer.cpp
 
 src/CMakeFiles/drawsvg.dir/software_renderer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/drawsvg.dir/software_renderer.cpp.i"
-	cd /home/arron/computer-graphics/homework-1/DrawSVG/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/arron/computer-graphics/homework-1/DrawSVG/src/software_renderer.cpp > CMakeFiles/drawsvg.dir/software_renderer.cpp.i
+	cd /home/arron/computer-graphics/DrawSVG/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/arron/computer-graphics/DrawSVG/src/software_renderer.cpp > CMakeFiles/drawsvg.dir/software_renderer.cpp.i
 
 src/CMakeFiles/drawsvg.dir/software_renderer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/drawsvg.dir/software_renderer.cpp.s"
-	cd /home/arron/computer-graphics/homework-1/DrawSVG/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/arron/computer-graphics/homework-1/DrawSVG/src/software_renderer.cpp -o CMakeFiles/drawsvg.dir/software_renderer.cpp.s
+	cd /home/arron/computer-graphics/DrawSVG/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/arron/computer-graphics/DrawSVG/src/software_renderer.cpp -o CMakeFiles/drawsvg.dir/software_renderer.cpp.s
 
 src/CMakeFiles/drawsvg.dir/drawsvg.cpp.o: src/CMakeFiles/drawsvg.dir/flags.make
 src/CMakeFiles/drawsvg.dir/drawsvg.cpp.o: ../src/drawsvg.cpp
 src/CMakeFiles/drawsvg.dir/drawsvg.cpp.o: src/CMakeFiles/drawsvg.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/arron/computer-graphics/homework-1/DrawSVG/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object src/CMakeFiles/drawsvg.dir/drawsvg.cpp.o"
-	cd /home/arron/computer-graphics/homework-1/DrawSVG/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/drawsvg.dir/drawsvg.cpp.o -MF CMakeFiles/drawsvg.dir/drawsvg.cpp.o.d -o CMakeFiles/drawsvg.dir/drawsvg.cpp.o -c /home/arron/computer-graphics/homework-1/DrawSVG/src/drawsvg.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/arron/computer-graphics/DrawSVG/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object src/CMakeFiles/drawsvg.dir/drawsvg.cpp.o"
+	cd /home/arron/computer-graphics/DrawSVG/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/drawsvg.dir/drawsvg.cpp.o -MF CMakeFiles/drawsvg.dir/drawsvg.cpp.o.d -o CMakeFiles/drawsvg.dir/drawsvg.cpp.o -c /home/arron/computer-graphics/DrawSVG/src/drawsvg.cpp
 
 src/CMakeFiles/drawsvg.dir/drawsvg.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/drawsvg.dir/drawsvg.cpp.i"
-	cd /home/arron/computer-graphics/homework-1/DrawSVG/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/arron/computer-graphics/homework-1/DrawSVG/src/drawsvg.cpp > CMakeFiles/drawsvg.dir/drawsvg.cpp.i
+	cd /home/arron/computer-graphics/DrawSVG/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/arron/computer-graphics/DrawSVG/src/drawsvg.cpp > CMakeFiles/drawsvg.dir/drawsvg.cpp.i
 
 src/CMakeFiles/drawsvg.dir/drawsvg.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/drawsvg.dir/drawsvg.cpp.s"
-	cd /home/arron/computer-graphics/homework-1/DrawSVG/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/arron/computer-graphics/homework-1/DrawSVG/src/drawsvg.cpp -o CMakeFiles/drawsvg.dir/drawsvg.cpp.s
+	cd /home/arron/computer-graphics/DrawSVG/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/arron/computer-graphics/DrawSVG/src/drawsvg.cpp -o CMakeFiles/drawsvg.dir/drawsvg.cpp.s
 
 src/CMakeFiles/drawsvg.dir/main.cpp.o: src/CMakeFiles/drawsvg.dir/flags.make
 src/CMakeFiles/drawsvg.dir/main.cpp.o: ../src/main.cpp
 src/CMakeFiles/drawsvg.dir/main.cpp.o: src/CMakeFiles/drawsvg.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/arron/computer-graphics/homework-1/DrawSVG/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object src/CMakeFiles/drawsvg.dir/main.cpp.o"
-	cd /home/arron/computer-graphics/homework-1/DrawSVG/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/drawsvg.dir/main.cpp.o -MF CMakeFiles/drawsvg.dir/main.cpp.o.d -o CMakeFiles/drawsvg.dir/main.cpp.o -c /home/arron/computer-graphics/homework-1/DrawSVG/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/arron/computer-graphics/DrawSVG/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object src/CMakeFiles/drawsvg.dir/main.cpp.o"
+	cd /home/arron/computer-graphics/DrawSVG/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/drawsvg.dir/main.cpp.o -MF CMakeFiles/drawsvg.dir/main.cpp.o.d -o CMakeFiles/drawsvg.dir/main.cpp.o -c /home/arron/computer-graphics/DrawSVG/src/main.cpp
 
 src/CMakeFiles/drawsvg.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/drawsvg.dir/main.cpp.i"
-	cd /home/arron/computer-graphics/homework-1/DrawSVG/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/arron/computer-graphics/homework-1/DrawSVG/src/main.cpp > CMakeFiles/drawsvg.dir/main.cpp.i
+	cd /home/arron/computer-graphics/DrawSVG/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/arron/computer-graphics/DrawSVG/src/main.cpp > CMakeFiles/drawsvg.dir/main.cpp.i
 
 src/CMakeFiles/drawsvg.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/drawsvg.dir/main.cpp.s"
-	cd /home/arron/computer-graphics/homework-1/DrawSVG/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/arron/computer-graphics/homework-1/DrawSVG/src/main.cpp -o CMakeFiles/drawsvg.dir/main.cpp.s
+	cd /home/arron/computer-graphics/DrawSVG/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/arron/computer-graphics/DrawSVG/src/main.cpp -o CMakeFiles/drawsvg.dir/main.cpp.s
 
 # Object files for target drawsvg
 drawsvg_OBJECTS = \
@@ -223,20 +223,21 @@ drawsvg: /usr/lib/x86_64-linux-gnu/libm.so
 drawsvg: /usr/lib/x86_64-linux-gnu/libX11.so
 drawsvg: /usr/lib/x86_64-linux-gnu/libXrandr.so
 drawsvg: /usr/lib/x86_64-linux-gnu/libXinerama.so
+drawsvg: /usr/lib/x86_64-linux-gnu/libXxf86vm.so
 drawsvg: /usr/lib/x86_64-linux-gnu/libXcursor.so
 drawsvg: src/CMakeFiles/drawsvg.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/arron/computer-graphics/homework-1/DrawSVG/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable ../drawsvg"
-	cd /home/arron/computer-graphics/homework-1/DrawSVG/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/drawsvg.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/arron/computer-graphics/DrawSVG/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable ../drawsvg"
+	cd /home/arron/computer-graphics/DrawSVG/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/drawsvg.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 src/CMakeFiles/drawsvg.dir/build: drawsvg
 .PHONY : src/CMakeFiles/drawsvg.dir/build
 
 src/CMakeFiles/drawsvg.dir/clean:
-	cd /home/arron/computer-graphics/homework-1/DrawSVG/build/src && $(CMAKE_COMMAND) -P CMakeFiles/drawsvg.dir/cmake_clean.cmake
+	cd /home/arron/computer-graphics/DrawSVG/build/src && $(CMAKE_COMMAND) -P CMakeFiles/drawsvg.dir/cmake_clean.cmake
 .PHONY : src/CMakeFiles/drawsvg.dir/clean
 
 src/CMakeFiles/drawsvg.dir/depend:
-	cd /home/arron/computer-graphics/homework-1/DrawSVG/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/arron/computer-graphics/homework-1/DrawSVG /home/arron/computer-graphics/homework-1/DrawSVG/src /home/arron/computer-graphics/homework-1/DrawSVG/build /home/arron/computer-graphics/homework-1/DrawSVG/build/src /home/arron/computer-graphics/homework-1/DrawSVG/build/src/CMakeFiles/drawsvg.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/arron/computer-graphics/DrawSVG/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/arron/computer-graphics/DrawSVG /home/arron/computer-graphics/DrawSVG/src /home/arron/computer-graphics/DrawSVG/build /home/arron/computer-graphics/DrawSVG/build/src /home/arron/computer-graphics/DrawSVG/build/src/CMakeFiles/drawsvg.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : src/CMakeFiles/drawsvg.dir/depend
 

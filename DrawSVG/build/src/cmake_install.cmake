@@ -1,4 +1,4 @@
-# Install script for directory: /home/arron/computer-graphics/homework-1/DrawSVG/src
+# Install script for directory: /home/arron/computer-graphics/DrawSVG/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,36 +44,36 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/arron/computer-graphics/homework-1/DrawSVG/src/hardware/libdrawsvghdwr.a")
+   "/home/arron/computer-graphics/DrawSVG/src/hardware/libdrawsvghdwr.a")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/home/arron/computer-graphics/homework-1/DrawSVG/src/hardware" TYPE STATIC_LIBRARY FILES "/home/arron/computer-graphics/homework-1/DrawSVG/build/src/libdrawsvghdwr.a")
+  file(INSTALL DESTINATION "/home/arron/computer-graphics/DrawSVG/src/hardware" TYPE STATIC_LIBRARY FILES "/home/arron/computer-graphics/DrawSVG/build/src/libdrawsvghdwr.a")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}/home/arron/computer-graphics/homework-1/DrawSVG/drawsvg" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}/home/arron/computer-graphics/homework-1/DrawSVG/drawsvg")
+  if(EXISTS "$ENV{DESTDIR}/home/arron/computer-graphics/DrawSVG/drawsvg" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/home/arron/computer-graphics/DrawSVG/drawsvg")
     file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}/home/arron/computer-graphics/homework-1/DrawSVG/drawsvg"
+         FILE "$ENV{DESTDIR}/home/arron/computer-graphics/DrawSVG/drawsvg"
          RPATH "")
   endif()
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/arron/computer-graphics/homework-1/DrawSVG/drawsvg")
+   "/home/arron/computer-graphics/DrawSVG/drawsvg")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/home/arron/computer-graphics/homework-1/DrawSVG" TYPE EXECUTABLE FILES "/home/arron/computer-graphics/homework-1/DrawSVG/build/drawsvg")
-  if(EXISTS "$ENV{DESTDIR}/home/arron/computer-graphics/homework-1/DrawSVG/drawsvg" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}/home/arron/computer-graphics/homework-1/DrawSVG/drawsvg")
+  file(INSTALL DESTINATION "/home/arron/computer-graphics/DrawSVG" TYPE EXECUTABLE FILES "/home/arron/computer-graphics/DrawSVG/build/drawsvg")
+  if(EXISTS "$ENV{DESTDIR}/home/arron/computer-graphics/DrawSVG/drawsvg" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/home/arron/computer-graphics/DrawSVG/drawsvg")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}/home/arron/computer-graphics/homework-1/DrawSVG/drawsvg")
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}/home/arron/computer-graphics/DrawSVG/drawsvg")
     endif()
   endif()
 endif()

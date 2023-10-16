@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/arron/computer-graphics/homework-1/DrawSVG
+CMAKE_SOURCE_DIR = /home/arron/computer-graphics/DrawSVG
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/arron/computer-graphics/homework-1/DrawSVG/build
+CMAKE_BINARY_DIR = /home/arron/computer-graphics/DrawSVG/build
 
 # Include any dependencies generated for this target.
 include CMU462/deps/glfw/tests/CMakeFiles/joysticks.dir/depend.make
@@ -72,30 +72,30 @@ include CMU462/deps/glfw/tests/CMakeFiles/joysticks.dir/flags.make
 CMU462/deps/glfw/tests/CMakeFiles/joysticks.dir/joysticks.c.o: CMU462/deps/glfw/tests/CMakeFiles/joysticks.dir/flags.make
 CMU462/deps/glfw/tests/CMakeFiles/joysticks.dir/joysticks.c.o: ../CMU462/deps/glfw/tests/joysticks.c
 CMU462/deps/glfw/tests/CMakeFiles/joysticks.dir/joysticks.c.o: CMU462/deps/glfw/tests/CMakeFiles/joysticks.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/arron/computer-graphics/homework-1/DrawSVG/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMU462/deps/glfw/tests/CMakeFiles/joysticks.dir/joysticks.c.o"
-	cd /home/arron/computer-graphics/homework-1/DrawSVG/build/CMU462/deps/glfw/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMU462/deps/glfw/tests/CMakeFiles/joysticks.dir/joysticks.c.o -MF CMakeFiles/joysticks.dir/joysticks.c.o.d -o CMakeFiles/joysticks.dir/joysticks.c.o -c /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/deps/glfw/tests/joysticks.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/arron/computer-graphics/DrawSVG/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMU462/deps/glfw/tests/CMakeFiles/joysticks.dir/joysticks.c.o"
+	cd /home/arron/computer-graphics/DrawSVG/build/CMU462/deps/glfw/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMU462/deps/glfw/tests/CMakeFiles/joysticks.dir/joysticks.c.o -MF CMakeFiles/joysticks.dir/joysticks.c.o.d -o CMakeFiles/joysticks.dir/joysticks.c.o -c /home/arron/computer-graphics/DrawSVG/CMU462/deps/glfw/tests/joysticks.c
 
 CMU462/deps/glfw/tests/CMakeFiles/joysticks.dir/joysticks.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/joysticks.dir/joysticks.c.i"
-	cd /home/arron/computer-graphics/homework-1/DrawSVG/build/CMU462/deps/glfw/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/deps/glfw/tests/joysticks.c > CMakeFiles/joysticks.dir/joysticks.c.i
+	cd /home/arron/computer-graphics/DrawSVG/build/CMU462/deps/glfw/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/arron/computer-graphics/DrawSVG/CMU462/deps/glfw/tests/joysticks.c > CMakeFiles/joysticks.dir/joysticks.c.i
 
 CMU462/deps/glfw/tests/CMakeFiles/joysticks.dir/joysticks.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/joysticks.dir/joysticks.c.s"
-	cd /home/arron/computer-graphics/homework-1/DrawSVG/build/CMU462/deps/glfw/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/deps/glfw/tests/joysticks.c -o CMakeFiles/joysticks.dir/joysticks.c.s
+	cd /home/arron/computer-graphics/DrawSVG/build/CMU462/deps/glfw/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/arron/computer-graphics/DrawSVG/CMU462/deps/glfw/tests/joysticks.c -o CMakeFiles/joysticks.dir/joysticks.c.s
 
 CMU462/deps/glfw/tests/CMakeFiles/joysticks.dir/__/deps/glad.c.o: CMU462/deps/glfw/tests/CMakeFiles/joysticks.dir/flags.make
 CMU462/deps/glfw/tests/CMakeFiles/joysticks.dir/__/deps/glad.c.o: ../CMU462/deps/glfw/deps/glad.c
 CMU462/deps/glfw/tests/CMakeFiles/joysticks.dir/__/deps/glad.c.o: CMU462/deps/glfw/tests/CMakeFiles/joysticks.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/arron/computer-graphics/homework-1/DrawSVG/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMU462/deps/glfw/tests/CMakeFiles/joysticks.dir/__/deps/glad.c.o"
-	cd /home/arron/computer-graphics/homework-1/DrawSVG/build/CMU462/deps/glfw/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMU462/deps/glfw/tests/CMakeFiles/joysticks.dir/__/deps/glad.c.o -MF CMakeFiles/joysticks.dir/__/deps/glad.c.o.d -o CMakeFiles/joysticks.dir/__/deps/glad.c.o -c /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/deps/glfw/deps/glad.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/arron/computer-graphics/DrawSVG/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMU462/deps/glfw/tests/CMakeFiles/joysticks.dir/__/deps/glad.c.o"
+	cd /home/arron/computer-graphics/DrawSVG/build/CMU462/deps/glfw/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMU462/deps/glfw/tests/CMakeFiles/joysticks.dir/__/deps/glad.c.o -MF CMakeFiles/joysticks.dir/__/deps/glad.c.o.d -o CMakeFiles/joysticks.dir/__/deps/glad.c.o -c /home/arron/computer-graphics/DrawSVG/CMU462/deps/glfw/deps/glad.c
 
 CMU462/deps/glfw/tests/CMakeFiles/joysticks.dir/__/deps/glad.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/joysticks.dir/__/deps/glad.c.i"
-	cd /home/arron/computer-graphics/homework-1/DrawSVG/build/CMU462/deps/glfw/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/deps/glfw/deps/glad.c > CMakeFiles/joysticks.dir/__/deps/glad.c.i
+	cd /home/arron/computer-graphics/DrawSVG/build/CMU462/deps/glfw/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/arron/computer-graphics/DrawSVG/CMU462/deps/glfw/deps/glad.c > CMakeFiles/joysticks.dir/__/deps/glad.c.i
 
 CMU462/deps/glfw/tests/CMakeFiles/joysticks.dir/__/deps/glad.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/joysticks.dir/__/deps/glad.c.s"
-	cd /home/arron/computer-graphics/homework-1/DrawSVG/build/CMU462/deps/glfw/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/deps/glfw/deps/glad.c -o CMakeFiles/joysticks.dir/__/deps/glad.c.s
+	cd /home/arron/computer-graphics/DrawSVG/build/CMU462/deps/glfw/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/arron/computer-graphics/DrawSVG/CMU462/deps/glfw/deps/glad.c -o CMakeFiles/joysticks.dir/__/deps/glad.c.s
 
 # Object files for target joysticks
 joysticks_OBJECTS = \
@@ -114,20 +114,21 @@ CMU462/deps/glfw/tests/joysticks: /usr/lib/x86_64-linux-gnu/libm.so
 CMU462/deps/glfw/tests/joysticks: /usr/lib/x86_64-linux-gnu/libX11.so
 CMU462/deps/glfw/tests/joysticks: /usr/lib/x86_64-linux-gnu/libXrandr.so
 CMU462/deps/glfw/tests/joysticks: /usr/lib/x86_64-linux-gnu/libXinerama.so
+CMU462/deps/glfw/tests/joysticks: /usr/lib/x86_64-linux-gnu/libXxf86vm.so
 CMU462/deps/glfw/tests/joysticks: /usr/lib/x86_64-linux-gnu/libXcursor.so
 CMU462/deps/glfw/tests/joysticks: CMU462/deps/glfw/tests/CMakeFiles/joysticks.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/arron/computer-graphics/homework-1/DrawSVG/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable joysticks"
-	cd /home/arron/computer-graphics/homework-1/DrawSVG/build/CMU462/deps/glfw/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/joysticks.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/arron/computer-graphics/DrawSVG/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable joysticks"
+	cd /home/arron/computer-graphics/DrawSVG/build/CMU462/deps/glfw/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/joysticks.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 CMU462/deps/glfw/tests/CMakeFiles/joysticks.dir/build: CMU462/deps/glfw/tests/joysticks
 .PHONY : CMU462/deps/glfw/tests/CMakeFiles/joysticks.dir/build
 
 CMU462/deps/glfw/tests/CMakeFiles/joysticks.dir/clean:
-	cd /home/arron/computer-graphics/homework-1/DrawSVG/build/CMU462/deps/glfw/tests && $(CMAKE_COMMAND) -P CMakeFiles/joysticks.dir/cmake_clean.cmake
+	cd /home/arron/computer-graphics/DrawSVG/build/CMU462/deps/glfw/tests && $(CMAKE_COMMAND) -P CMakeFiles/joysticks.dir/cmake_clean.cmake
 .PHONY : CMU462/deps/glfw/tests/CMakeFiles/joysticks.dir/clean
 
 CMU462/deps/glfw/tests/CMakeFiles/joysticks.dir/depend:
-	cd /home/arron/computer-graphics/homework-1/DrawSVG/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/arron/computer-graphics/homework-1/DrawSVG /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/deps/glfw/tests /home/arron/computer-graphics/homework-1/DrawSVG/build /home/arron/computer-graphics/homework-1/DrawSVG/build/CMU462/deps/glfw/tests /home/arron/computer-graphics/homework-1/DrawSVG/build/CMU462/deps/glfw/tests/CMakeFiles/joysticks.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/arron/computer-graphics/DrawSVG/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/arron/computer-graphics/DrawSVG /home/arron/computer-graphics/DrawSVG/CMU462/deps/glfw/tests /home/arron/computer-graphics/DrawSVG/build /home/arron/computer-graphics/DrawSVG/build/CMU462/deps/glfw/tests /home/arron/computer-graphics/DrawSVG/build/CMU462/deps/glfw/tests/CMakeFiles/joysticks.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMU462/deps/glfw/tests/CMakeFiles/joysticks.dir/depend
 

@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = 
 
-C_INCLUDES = -I/home/arron/computer-graphics/homework-1/DrawSVG/CMU462/deps/glew/include
+C_INCLUDES = -I/home/arron/computer-graphics/DrawSVG/CMU462/deps/glew/include
 
 C_FLAGS = -w
 

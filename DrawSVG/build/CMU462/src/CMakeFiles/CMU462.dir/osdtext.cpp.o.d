@@ -1,7 +1,7 @@
 CMU462/src/CMakeFiles/CMU462.dir/osdtext.cpp.o: \
- /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/src/osdtext.cpp \
+ /home/arron/computer-graphics/DrawSVG/CMU462/src/osdtext.cpp \
  /usr/include/stdc-predef.h \
- /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/include/CMU462/osdtext.h \
+ /home/arron/computer-graphics/DrawSVG/CMU462/include/CMU462/osdtext.h \
  /usr/include/c++/11/string \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -136,11 +136,11 @@ CMU462/src/CMakeFiles/CMU462.dir/osdtext.cpp.o: \
  /usr/include/c++/11/bits/stl_vector.h \
  /usr/include/c++/11/bits/stl_bvector.h \
  /usr/include/c++/11/bits/vector.tcc \
- /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/include/GL/glew.h \
+ /home/arron/computer-graphics/DrawSVG/CMU462/include/GL/glew.h \
  /usr/include/GL/glu.h /usr/include/GL/gl.h \
- /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/include/CMU462/color.h \
- /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/include/CMU462/CMU462.h \
- /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/include/CMU462/misc.h \
+ /home/arron/computer-graphics/DrawSVG/CMU462/include/CMU462/color.h \
+ /home/arron/computer-graphics/DrawSVG/CMU462/include/CMU462/CMU462.h \
+ /home/arron/computer-graphics/DrawSVG/CMU462/include/CMU462/misc.h \
  /usr/include/c++/11/cmath /usr/include/math.h \
  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
@@ -206,5 +206,5 @@ CMU462/src/CMakeFiles/CMU462.dir/osdtext.cpp.o: \
  /usr/include/freetype2/freetype/fterrors.h \
  /usr/include/freetype2/freetype/ftmoderr.h \
  /usr/include/freetype2/freetype/fterrdef.h \
- /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/include/CMU462/base64.h \
- /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/include/CMU462/console.h
+ /home/arron/computer-graphics/DrawSVG/CMU462/include/CMU462/base64.h \
+ /home/arron/computer-graphics/DrawSVG/CMU462/include/CMU462/console.h

@@ -8,22 +8,22 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/arron/computer-graphics/homework-1/DrawSVG/src/drawsvg.cpp" "src/CMakeFiles/drawsvg.dir/drawsvg.cpp.o" "gcc" "src/CMakeFiles/drawsvg.dir/drawsvg.cpp.o.d"
-  "/home/arron/computer-graphics/homework-1/DrawSVG/src/main.cpp" "src/CMakeFiles/drawsvg.dir/main.cpp.o" "gcc" "src/CMakeFiles/drawsvg.dir/main.cpp.o.d"
-  "/home/arron/computer-graphics/homework-1/DrawSVG/src/png.cpp" "src/CMakeFiles/drawsvg.dir/png.cpp.o" "gcc" "src/CMakeFiles/drawsvg.dir/png.cpp.o.d"
-  "/home/arron/computer-graphics/homework-1/DrawSVG/src/software_renderer.cpp" "src/CMakeFiles/drawsvg.dir/software_renderer.cpp.o" "gcc" "src/CMakeFiles/drawsvg.dir/software_renderer.cpp.o.d"
-  "/home/arron/computer-graphics/homework-1/DrawSVG/src/svg.cpp" "src/CMakeFiles/drawsvg.dir/svg.cpp.o" "gcc" "src/CMakeFiles/drawsvg.dir/svg.cpp.o.d"
-  "/home/arron/computer-graphics/homework-1/DrawSVG/src/texture.cpp" "src/CMakeFiles/drawsvg.dir/texture.cpp.o" "gcc" "src/CMakeFiles/drawsvg.dir/texture.cpp.o.d"
-  "/home/arron/computer-graphics/homework-1/DrawSVG/src/triangulation.cpp" "src/CMakeFiles/drawsvg.dir/triangulation.cpp.o" "gcc" "src/CMakeFiles/drawsvg.dir/triangulation.cpp.o.d"
-  "/home/arron/computer-graphics/homework-1/DrawSVG/src/viewport.cpp" "src/CMakeFiles/drawsvg.dir/viewport.cpp.o" "gcc" "src/CMakeFiles/drawsvg.dir/viewport.cpp.o.d"
+  "/home/arron/computer-graphics/DrawSVG/src/drawsvg.cpp" "src/CMakeFiles/drawsvg.dir/drawsvg.cpp.o" "gcc" "src/CMakeFiles/drawsvg.dir/drawsvg.cpp.o.d"
+  "/home/arron/computer-graphics/DrawSVG/src/main.cpp" "src/CMakeFiles/drawsvg.dir/main.cpp.o" "gcc" "src/CMakeFiles/drawsvg.dir/main.cpp.o.d"
+  "/home/arron/computer-graphics/DrawSVG/src/png.cpp" "src/CMakeFiles/drawsvg.dir/png.cpp.o" "gcc" "src/CMakeFiles/drawsvg.dir/png.cpp.o.d"
+  "/home/arron/computer-graphics/DrawSVG/src/software_renderer.cpp" "src/CMakeFiles/drawsvg.dir/software_renderer.cpp.o" "gcc" "src/CMakeFiles/drawsvg.dir/software_renderer.cpp.o.d"
+  "/home/arron/computer-graphics/DrawSVG/src/svg.cpp" "src/CMakeFiles/drawsvg.dir/svg.cpp.o" "gcc" "src/CMakeFiles/drawsvg.dir/svg.cpp.o.d"
+  "/home/arron/computer-graphics/DrawSVG/src/texture.cpp" "src/CMakeFiles/drawsvg.dir/texture.cpp.o" "gcc" "src/CMakeFiles/drawsvg.dir/texture.cpp.o.d"
+  "/home/arron/computer-graphics/DrawSVG/src/triangulation.cpp" "src/CMakeFiles/drawsvg.dir/triangulation.cpp.o" "gcc" "src/CMakeFiles/drawsvg.dir/triangulation.cpp.o.d"
+  "/home/arron/computer-graphics/DrawSVG/src/viewport.cpp" "src/CMakeFiles/drawsvg.dir/viewport.cpp.o" "gcc" "src/CMakeFiles/drawsvg.dir/viewport.cpp.o.d"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/arron/computer-graphics/homework-1/DrawSVG/build/src/CMakeFiles/drawsvg_hdwr.dir/DependInfo.cmake"
-  "/home/arron/computer-graphics/homework-1/DrawSVG/build/CMU462/src/CMakeFiles/CMU462.dir/DependInfo.cmake"
-  "/home/arron/computer-graphics/homework-1/DrawSVG/build/CMU462/deps/glew/CMakeFiles/glew.dir/DependInfo.cmake"
-  "/home/arron/computer-graphics/homework-1/DrawSVG/build/CMU462/deps/glfw/src/CMakeFiles/glfw.dir/DependInfo.cmake"
+  "/home/arron/computer-graphics/DrawSVG/build/src/CMakeFiles/drawsvg_hdwr.dir/DependInfo.cmake"
+  "/home/arron/computer-graphics/DrawSVG/build/CMU462/src/CMakeFiles/CMU462.dir/DependInfo.cmake"
+  "/home/arron/computer-graphics/DrawSVG/build/CMU462/deps/glew/CMakeFiles/glew.dir/DependInfo.cmake"
+  "/home/arron/computer-graphics/DrawSVG/build/CMU462/deps/glfw/src/CMakeFiles/glfw.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.
