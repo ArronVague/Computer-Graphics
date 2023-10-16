@@ -4,6 +4,7 @@
 #include <vector>
 #include <iostream>
 #include <algorithm>
+#include <functional>
 
 #include "triangulation.h"
 
@@ -270,36 +271,40 @@ namespace CMU462
         // Implement line rasterization
 
         // Bresenham's line algorithm
-        int x_start = (int)floor(x0);
-        int y_start = (int)floor(y0);
-        int x_end = (int)floor(x1);
-        int y_end = (int)floor(y1);
-
-        int dx = abs(x_end - x_start);
-        int dy = abs(y_end - y_start);
-        int sx = (x_start < x_end) ? 1 : -1;
-        int sy = (y_start < y_end) ? 1 : -1;
-        int err = dx - dy;
-
-        while (true)
+        function<void(float, float, float, float, Color)> Bresenham = [this](float x0, float y0, float x1, float y1, Color color)
         {
-            rasterize_point(x_start, y_start, color);
-            if (x_start == x_end && y_start == y_end)
+            int x_start = (int)floor(x0);
+            int y_start = (int)floor(y0);
+            int x_end = (int)floor(x1);
+            int y_end = (int)floor(y1);
+
+            int dx = abs(x_end - x_start);
+            int dy = abs(y_end - y_start);
+            int sx = (x_start < x_end) ? 1 : -1;
+            int sy = (y_start < y_end) ? 1 : -1;
+            int err = dx - dy;
+
+            while (true)
             {
-                break;
+                rasterize_point(x_start, y_start, color);
+                if (x_start == x_end && y_start == y_end)
+                {
+                    break;
+                }
+                int e2 = 2 * err;
+                if (e2 > -dy)
+                {
+                    err -= dy;
+                    x_start += sx;
+                }
+                if (e2 < dx)
+                {
+                    err += dx;
+                    y_start += sy;
+                }
             }
-            int e2 = 2 * err;
-            if (e2 > -dy)
-            {
-                err -= dy;
-                x_start += sx;
-            }
-            if (e2 < dx)
-            {
-                err += dx;
-                y_start += sy;
-            }
-        }
+        };
+        Bresenham(x0, y0, x1, y1, color);
     }
 
     void SoftwareRendererImp::rasterize_triangle(float x0, float y0,
