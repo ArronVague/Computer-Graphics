@@ -26,4 +26,41 @@
 
 [Bresenham画直线算法（所有斜率） - 明明1109 - 博客园](https://www.cnblogs.com/fortunely/p/17660786.html)
 
+## lambda
 
+```cpp
+        // 通过[this]捕获this，从而在lambda函数内部调用成员函数
+        function<void(float, float, float, float, Color)> Bresenham = [this](float x0, float y0, float x1, float y1, Color color)
+        {
+            int x_start = (int)floor(x0);
+            int y_start = (int)floor(y0);
+            int x_end = (int)floor(x1);
+            int y_end = (int)floor(y1);
+
+            int dx = abs(x_end - x_start);
+            int dy = abs(y_end - y_start);
+            int sx = (x_start < x_end) ? 1 : -1;
+            int sy = (y_start < y_end) ? 1 : -1;
+            int err = dx - dy;
+
+            while (true)
+            {
+                rasterize_point(x_start, y_start, color);
+                if (x_start == x_end && y_start == y_end)
+                {
+                    break;
+                }
+                int e2 = 2 * err;
+                if (e2 > -dy)
+                {
+                    err -= dy;
+                    x_start += sx;
+                }
+                if (e2 < dx)
+                {
+                    err += dx;
+                    y_start += sy;
+                }
+            }
+        };
+```
