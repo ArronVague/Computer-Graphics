@@ -1,9 +1,9 @@
 CMU462/deps/glfw/tests/CMakeFiles/clipboard.dir/clipboard.c.o: \
- /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/deps/glfw/tests/clipboard.c \
+ /home/arron/computer-graphics/DrawSVG/CMU462/deps/glfw/tests/clipboard.c \
  /usr/include/stdc-predef.h \
- /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/deps/glfw/deps/glad/glad.h \
+ /home/arron/computer-graphics/DrawSVG/CMU462/deps/glfw/deps/glad/glad.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
- /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/deps/glfw/deps/KHR/khrplatform.h \
+ /home/arron/computer-graphics/DrawSVG/CMU462/deps/glfw/deps/KHR/khrplatform.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -20,7 +20,7 @@ CMU462/deps/glfw/tests/CMakeFiles/clipboard.dir/clipboard.c.o: \
  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
  /usr/include/inttypes.h \
- /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/deps/glfw/include/GLFW/glfw3.h \
+ /home/arron/computer-graphics/DrawSVG/CMU462/deps/glfw/include/GLFW/glfw3.h \
  /usr/include/GL/gl.h /usr/include/stdio.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
  /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
@@ -56,4 +56,4 @@ CMU462/deps/glfw/tests/CMakeFiles/clipboard.dir/clipboard.c.o: \
  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h /usr/include/alloca.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
- /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/deps/glfw/deps/getopt.h
+ /home/arron/computer-graphics/DrawSVG/CMU462/deps/glfw/deps/getopt.h

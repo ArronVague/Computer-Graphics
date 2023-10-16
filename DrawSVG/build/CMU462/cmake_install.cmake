@@ -1,8 +1,8 @@
-# Install script for directory: /home/arron/computer-graphics/homework-1/DrawSVG/CMU462
+# Install script for directory: /home/arron/computer-graphics/DrawSVG/CMU462
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/arron/computer-graphics/homework-1/DrawSVG/CMU462")
+  set(CMAKE_INSTALL_PREFIX "/home/arron/computer-graphics/DrawSVG/CMU462")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -44,9 +44,9 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/arron/computer-graphics/homework-1/DrawSVG/build/CMU462/deps/glew/cmake_install.cmake")
-  include("/home/arron/computer-graphics/homework-1/DrawSVG/build/CMU462/deps/glfw/cmake_install.cmake")
-  include("/home/arron/computer-graphics/homework-1/DrawSVG/build/CMU462/src/cmake_install.cmake")
+  include("/home/arron/computer-graphics/DrawSVG/build/CMU462/deps/glew/cmake_install.cmake")
+  include("/home/arron/computer-graphics/DrawSVG/build/CMU462/deps/glfw/cmake_install.cmake")
+  include("/home/arron/computer-graphics/DrawSVG/build/CMU462/src/cmake_install.cmake")
 
 endif()
 

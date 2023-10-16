@@ -1,7 +1,7 @@
 CMU462/deps/glew/CMakeFiles/glew.dir/src/glew.c.o: \
- /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/deps/glew/src/glew.c \
+ /home/arron/computer-graphics/DrawSVG/CMU462/deps/glew/src/glew.c \
  /usr/include/stdc-predef.h \
- /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/deps/glew/include/GL/glew.h \
+ /home/arron/computer-graphics/DrawSVG/CMU462/deps/glew/include/GL/glew.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
@@ -19,7 +19,7 @@ CMU462/deps/glew/CMakeFiles/glew.dir/src/glew.c.o: \
  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h /usr/include/GL/glu.h \
  /usr/include/GL/gl.h \
- /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/deps/glew/include/GL/glxew.h \
+ /home/arron/computer-graphics/DrawSVG/CMU462/deps/glew/include/GL/glxew.h \
  /usr/include/X11/Xlib.h /usr/include/x86_64-linux-gnu/sys/types.h \
  /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \

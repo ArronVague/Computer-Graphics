@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/arron/computer-graphics/homework-1/DrawSVG
+CMAKE_SOURCE_DIR = /home/arron/computer-graphics/DrawSVG
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/arron/computer-graphics/homework-1/DrawSVG/build
+CMAKE_BINARY_DIR = /home/arron/computer-graphics/DrawSVG/build
 
 # Include any dependencies generated for this target.
 include src/CMakeFiles/drawsvg_hdwr.dir/depend.make
@@ -72,16 +72,16 @@ include src/CMakeFiles/drawsvg_hdwr.dir/flags.make
 src/CMakeFiles/drawsvg_hdwr.dir/hardware/hardware_renderer.cpp.o: src/CMakeFiles/drawsvg_hdwr.dir/flags.make
 src/CMakeFiles/drawsvg_hdwr.dir/hardware/hardware_renderer.cpp.o: ../src/hardware/hardware_renderer.cpp
 src/CMakeFiles/drawsvg_hdwr.dir/hardware/hardware_renderer.cpp.o: src/CMakeFiles/drawsvg_hdwr.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/arron/computer-graphics/homework-1/DrawSVG/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/drawsvg_hdwr.dir/hardware/hardware_renderer.cpp.o"
-	cd /home/arron/computer-graphics/homework-1/DrawSVG/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/drawsvg_hdwr.dir/hardware/hardware_renderer.cpp.o -MF CMakeFiles/drawsvg_hdwr.dir/hardware/hardware_renderer.cpp.o.d -o CMakeFiles/drawsvg_hdwr.dir/hardware/hardware_renderer.cpp.o -c /home/arron/computer-graphics/homework-1/DrawSVG/src/hardware/hardware_renderer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/arron/computer-graphics/DrawSVG/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/drawsvg_hdwr.dir/hardware/hardware_renderer.cpp.o"
+	cd /home/arron/computer-graphics/DrawSVG/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/drawsvg_hdwr.dir/hardware/hardware_renderer.cpp.o -MF CMakeFiles/drawsvg_hdwr.dir/hardware/hardware_renderer.cpp.o.d -o CMakeFiles/drawsvg_hdwr.dir/hardware/hardware_renderer.cpp.o -c /home/arron/computer-graphics/DrawSVG/src/hardware/hardware_renderer.cpp
 
 src/CMakeFiles/drawsvg_hdwr.dir/hardware/hardware_renderer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/drawsvg_hdwr.dir/hardware/hardware_renderer.cpp.i"
-	cd /home/arron/computer-graphics/homework-1/DrawSVG/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/arron/computer-graphics/homework-1/DrawSVG/src/hardware/hardware_renderer.cpp > CMakeFiles/drawsvg_hdwr.dir/hardware/hardware_renderer.cpp.i
+	cd /home/arron/computer-graphics/DrawSVG/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/arron/computer-graphics/DrawSVG/src/hardware/hardware_renderer.cpp > CMakeFiles/drawsvg_hdwr.dir/hardware/hardware_renderer.cpp.i
 
 src/CMakeFiles/drawsvg_hdwr.dir/hardware/hardware_renderer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/drawsvg_hdwr.dir/hardware/hardware_renderer.cpp.s"
-	cd /home/arron/computer-graphics/homework-1/DrawSVG/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/arron/computer-graphics/homework-1/DrawSVG/src/hardware/hardware_renderer.cpp -o CMakeFiles/drawsvg_hdwr.dir/hardware/hardware_renderer.cpp.s
+	cd /home/arron/computer-graphics/DrawSVG/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/arron/computer-graphics/DrawSVG/src/hardware/hardware_renderer.cpp -o CMakeFiles/drawsvg_hdwr.dir/hardware/hardware_renderer.cpp.s
 
 # Object files for target drawsvg_hdwr
 drawsvg_hdwr_OBJECTS = \
@@ -93,19 +93,19 @@ drawsvg_hdwr_EXTERNAL_OBJECTS =
 src/libdrawsvghdwr.a: src/CMakeFiles/drawsvg_hdwr.dir/hardware/hardware_renderer.cpp.o
 src/libdrawsvghdwr.a: src/CMakeFiles/drawsvg_hdwr.dir/build.make
 src/libdrawsvghdwr.a: src/CMakeFiles/drawsvg_hdwr.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/arron/computer-graphics/homework-1/DrawSVG/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libdrawsvghdwr.a"
-	cd /home/arron/computer-graphics/homework-1/DrawSVG/build/src && $(CMAKE_COMMAND) -P CMakeFiles/drawsvg_hdwr.dir/cmake_clean_target.cmake
-	cd /home/arron/computer-graphics/homework-1/DrawSVG/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/drawsvg_hdwr.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/arron/computer-graphics/DrawSVG/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libdrawsvghdwr.a"
+	cd /home/arron/computer-graphics/DrawSVG/build/src && $(CMAKE_COMMAND) -P CMakeFiles/drawsvg_hdwr.dir/cmake_clean_target.cmake
+	cd /home/arron/computer-graphics/DrawSVG/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/drawsvg_hdwr.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 src/CMakeFiles/drawsvg_hdwr.dir/build: src/libdrawsvghdwr.a
 .PHONY : src/CMakeFiles/drawsvg_hdwr.dir/build
 
 src/CMakeFiles/drawsvg_hdwr.dir/clean:
-	cd /home/arron/computer-graphics/homework-1/DrawSVG/build/src && $(CMAKE_COMMAND) -P CMakeFiles/drawsvg_hdwr.dir/cmake_clean.cmake
+	cd /home/arron/computer-graphics/DrawSVG/build/src && $(CMAKE_COMMAND) -P CMakeFiles/drawsvg_hdwr.dir/cmake_clean.cmake
 .PHONY : src/CMakeFiles/drawsvg_hdwr.dir/clean
 
 src/CMakeFiles/drawsvg_hdwr.dir/depend:
-	cd /home/arron/computer-graphics/homework-1/DrawSVG/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/arron/computer-graphics/homework-1/DrawSVG /home/arron/computer-graphics/homework-1/DrawSVG/src /home/arron/computer-graphics/homework-1/DrawSVG/build /home/arron/computer-graphics/homework-1/DrawSVG/build/src /home/arron/computer-graphics/homework-1/DrawSVG/build/src/CMakeFiles/drawsvg_hdwr.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/arron/computer-graphics/DrawSVG/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/arron/computer-graphics/DrawSVG /home/arron/computer-graphics/DrawSVG/src /home/arron/computer-graphics/DrawSVG/build /home/arron/computer-graphics/DrawSVG/build/src /home/arron/computer-graphics/DrawSVG/build/src/CMakeFiles/drawsvg_hdwr.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : src/CMakeFiles/drawsvg_hdwr.dir/depend
 

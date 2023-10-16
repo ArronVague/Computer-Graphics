@@ -1,10 +1,10 @@
 CMU462/src/CMakeFiles/CMU462.dir/viewer.cpp.o: \
- /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/src/viewer.cpp \
+ /home/arron/computer-graphics/DrawSVG/CMU462/src/viewer.cpp \
  /usr/include/stdc-predef.h \
- /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/include/CMU462/viewer.h \
- /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/include/CMU462/renderer.h \
- /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/include/CMU462/CMU462.h \
- /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/include/CMU462/misc.h \
+ /home/arron/computer-graphics/DrawSVG/CMU462/include/CMU462/viewer.h \
+ /home/arron/computer-graphics/DrawSVG/CMU462/include/CMU462/renderer.h \
+ /home/arron/computer-graphics/DrawSVG/CMU462/include/CMU462/CMU462.h \
+ /home/arron/computer-graphics/DrawSVG/CMU462/include/CMU462/misc.h \
  /usr/include/c++/11/cmath \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -150,17 +150,17 @@ CMU462/src/CMakeFiles/CMU462.dir/viewer.cpp.o: \
  /usr/include/c++/11/bits/functional_hash.h \
  /usr/include/c++/11/bits/hash_bytes.h \
  /usr/include/c++/11/bits/basic_string.tcc \
- /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/include/CMU462/osdtext.h \
+ /home/arron/computer-graphics/DrawSVG/CMU462/include/CMU462/osdtext.h \
  /usr/include/c++/11/vector /usr/include/c++/11/bits/stl_uninitialized.h \
  /usr/include/c++/11/bits/stl_vector.h \
  /usr/include/c++/11/bits/stl_bvector.h \
  /usr/include/c++/11/bits/vector.tcc \
- /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/include/GL/glew.h \
+ /home/arron/computer-graphics/DrawSVG/CMU462/include/GL/glew.h \
  /usr/include/GL/glu.h /usr/include/GL/gl.h \
- /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/include/CMU462/color.h \
+ /home/arron/computer-graphics/DrawSVG/CMU462/include/CMU462/color.h \
  /usr/include/c++/11/chrono /usr/include/c++/11/ratio \
  /usr/include/c++/11/ctime /usr/include/c++/11/bits/parse_numbers.h \
- /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/include/GLFW/glfw3.h \
+ /home/arron/computer-graphics/DrawSVG/CMU462/include/GLFW/glfw3.h \
  /usr/include/c++/11/iostream /usr/include/c++/11/ostream \
  /usr/include/c++/11/ios /usr/include/c++/11/exception \
  /usr/include/c++/11/bits/exception_ptr.h \
@@ -183,4 +183,4 @@ CMU462/src/CMakeFiles/CMU462.dir/viewer.cpp.o: \
  /usr/include/c++/11/bits/basic_ios.tcc \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
  /usr/include/c++/11/bits/istream.tcc \
- /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/include/CMU462/console.h
+ /home/arron/computer-graphics/DrawSVG/CMU462/include/CMU462/console.h

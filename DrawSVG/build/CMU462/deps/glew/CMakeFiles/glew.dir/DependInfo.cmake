@@ -8,9 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/arron/computer-graphics/homework-1/DrawSVG/CMU462/deps/glew/src/glew.c" "CMU462/deps/glew/CMakeFiles/glew.dir/src/glew.c.o" "gcc" "CMU462/deps/glew/CMakeFiles/glew.dir/src/glew.c.o.d"
-  "/home/arron/computer-graphics/homework-1/DrawSVG/CMU462/deps/glew/src/glewinfo.c" "CMU462/deps/glew/CMakeFiles/glew.dir/src/glewinfo.c.o" "gcc" "CMU462/deps/glew/CMakeFiles/glew.dir/src/glewinfo.c.o.d"
-  "/home/arron/computer-graphics/homework-1/DrawSVG/CMU462/deps/glew/src/visualinfo.c" "CMU462/deps/glew/CMakeFiles/glew.dir/src/visualinfo.c.o" "gcc" "CMU462/deps/glew/CMakeFiles/glew.dir/src/visualinfo.c.o.d"
+  "/home/arron/computer-graphics/DrawSVG/CMU462/deps/glew/src/glew.c" "CMU462/deps/glew/CMakeFiles/glew.dir/src/glew.c.o" "gcc" "CMU462/deps/glew/CMakeFiles/glew.dir/src/glew.c.o.d"
+  "/home/arron/computer-graphics/DrawSVG/CMU462/deps/glew/src/glewinfo.c" "CMU462/deps/glew/CMakeFiles/glew.dir/src/glewinfo.c.o" "gcc" "CMU462/deps/glew/CMakeFiles/glew.dir/src/glewinfo.c.o.d"
+  "/home/arron/computer-graphics/DrawSVG/CMU462/deps/glew/src/visualinfo.c" "CMU462/deps/glew/CMakeFiles/glew.dir/src/visualinfo.c.o" "gcc" "CMU462/deps/glew/CMakeFiles/glew.dir/src/visualinfo.c.o.d"
   )
 
 # Targets to which this target links.

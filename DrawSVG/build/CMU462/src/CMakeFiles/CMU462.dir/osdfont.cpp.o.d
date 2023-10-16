@@ -1,5 +1,5 @@
 CMU462/src/CMakeFiles/CMU462.dir/osdfont.cpp.o: \
- /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/src/osdfont.cpp \
+ /home/arron/computer-graphics/DrawSVG/CMU462/src/osdfont.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/11/string \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -130,16 +130,16 @@ CMU462/src/CMakeFiles/CMU462.dir/osdfont.cpp.o: \
  /usr/include/c++/11/bits/functional_hash.h \
  /usr/include/c++/11/bits/hash_bytes.h \
  /usr/include/c++/11/bits/basic_string.tcc \
- /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/include/CMU462/osdtext.h \
+ /home/arron/computer-graphics/DrawSVG/CMU462/include/CMU462/osdtext.h \
  /usr/include/c++/11/vector /usr/include/c++/11/bits/stl_uninitialized.h \
  /usr/include/c++/11/bits/stl_vector.h \
  /usr/include/c++/11/bits/stl_bvector.h \
  /usr/include/c++/11/bits/vector.tcc \
- /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/include/GL/glew.h \
+ /home/arron/computer-graphics/DrawSVG/CMU462/include/GL/glew.h \
  /usr/include/GL/glu.h /usr/include/GL/gl.h \
- /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/include/CMU462/color.h \
- /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/include/CMU462/CMU462.h \
- /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/include/CMU462/misc.h \
+ /home/arron/computer-graphics/DrawSVG/CMU462/include/CMU462/color.h \
+ /home/arron/computer-graphics/DrawSVG/CMU462/include/CMU462/CMU462.h \
+ /home/arron/computer-graphics/DrawSVG/CMU462/include/CMU462/misc.h \
  /usr/include/c++/11/cmath /usr/include/math.h \
  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \

@@ -1,7 +1,7 @@
 CMU462/deps/glfw/tests/CMakeFiles/iconify.dir/__/deps/getopt.c.o: \
- /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/deps/glfw/deps/getopt.c \
+ /home/arron/computer-graphics/DrawSVG/CMU462/deps/glfw/deps/getopt.c \
  /usr/include/stdc-predef.h \
- /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/deps/glfw/deps/getopt.h \
+ /home/arron/computer-graphics/DrawSVG/CMU462/deps/glfw/deps/getopt.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h /usr/include/string.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \

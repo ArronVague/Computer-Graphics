@@ -1,9 +1,9 @@
 CMU462/src/CMakeFiles/CMU462.dir/complex.cpp.o: \
- /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/src/complex.cpp \
+ /home/arron/computer-graphics/DrawSVG/CMU462/src/complex.cpp \
  /usr/include/stdc-predef.h \
- /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/include/CMU462/complex.h \
- /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/include/CMU462/CMU462.h \
- /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/include/CMU462/misc.h \
+ /home/arron/computer-graphics/DrawSVG/CMU462/include/CMU462/complex.h \
+ /home/arron/computer-graphics/DrawSVG/CMU462/include/CMU462/CMU462.h \
+ /home/arron/computer-graphics/DrawSVG/CMU462/include/CMU462/misc.h \
  /usr/include/c++/11/cmath \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -86,7 +86,7 @@ CMU462/src/CMakeFiles/CMU462.dir/complex.cpp.o: \
  /usr/include/c++/11/bits/stl_construct.h /usr/include/c++/11/new \
  /usr/include/c++/11/bits/exception.h \
  /usr/include/c++/11/bits/uniform_int_dist.h \
- /home/arron/computer-graphics/homework-1/DrawSVG/CMU462/include/CMU462/vector2D.h \
+ /home/arron/computer-graphics/DrawSVG/CMU462/include/CMU462/vector2D.h \
  /usr/include/c++/11/ostream /usr/include/c++/11/ios \
  /usr/include/c++/11/iosfwd /usr/include/c++/11/bits/stringfwd.h \
  /usr/include/c++/11/bits/memoryfwd.h /usr/include/c++/11/bits/postypes.h \
