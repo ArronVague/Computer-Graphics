@@ -271,6 +271,7 @@ namespace CMU462
         // Implement line rasterization
 
         // Bresenham's line algorithm
+        // 通过[this]捕获this，从而在lambda函数内部调用成员函数
         function<void(float, float, float, float, Color)> Bresenham = [this](float x0, float y0, float x1, float y1, Color color)
         {
             int x_start = (int)floor(x0);
