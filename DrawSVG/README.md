@@ -20,4 +20,10 @@
   sudo dhclient ens33
   ```
 
+## Bresenham算法参考
+
+[【附源码】布雷森汉姆直线算法(bresenham‘s line algorithm)_*布雷森汉姆线算法-CSDN博客](https://blog.csdn.net/u011341856/article/details/118788353)
+
+[Bresenham画直线算法（所有斜率） - 明明1109 - 博客园](https://www.cnblogs.com/fortunely/p/17660786.html)
+
 
