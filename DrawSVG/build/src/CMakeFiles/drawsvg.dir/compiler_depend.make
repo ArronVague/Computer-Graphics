@@ -1038,6 +1038,9 @@ src/CMakeFiles/drawsvg.dir/software_renderer.cpp.o: ../src/software_renderer.cpp
   /usr/include/c++/11/iostream \
   /usr/include/c++/11/istream \
   /usr/include/c++/11/bits/istream.tcc \
+  /usr/include/c++/11/functional \
+  /usr/include/c++/11/bits/refwrap.h \
+  /usr/include/c++/11/bits/std_function.h \
   ../src/triangulation.h
 
 src/CMakeFiles/drawsvg.dir/svg.cpp.o: ../src/svg.cpp \
@@ -2028,6 +2031,8 @@ src/CMakeFiles/drawsvg.dir/viewport.cpp.o: ../src/viewport.cpp \
 
 /usr/include/x86_64-linux-gnu/asm/posix_types.h:
 
+/usr/include/c++/11/bits/refwrap.h:
+
 /usr/include/linux/stddef.h:
 
 /usr/include/linux/posix_types.h:
@@ -2059,6 +2064,8 @@ src/CMakeFiles/drawsvg.dir/viewport.cpp.o: ../src/viewport.cpp \
 /usr/include/x86_64-linux-gnu/bits/local_lim.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdio.h:
+
+/usr/include/c++/11/bits/std_function.h:
 
 /usr/include/c++/11/bits/stl_tempbuf.h:
 
@@ -2455,6 +2462,8 @@ src/CMakeFiles/drawsvg.dir/viewport.cpp.o: ../src/viewport.cpp \
 /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h:
 
 /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h:
+
+/usr/include/c++/11/functional:
 
 /usr/include/linux/errno.h:
 
