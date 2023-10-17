@@ -362,10 +362,10 @@ namespace CMU462
         Vector2D p1 = Vector2D(x1, y1);
         Vector2D p2 = Vector2D(x2, y2);
 
-        int minX = min(min(p0.x, p1.x), p2.x);
-        int maxX = max(max(p0.x, p1.x), p2.x);
-        int minY = min(min(p0.y, p1.y), p2.y);
-        int maxY = max(max(p0.y, p1.y), p2.y);
+        int minX = floor(min(min(p0.x, p1.x), p2.x));
+        int maxX = ceil(max(max(p0.x, p1.x), p2.x));
+        int minY = floor(min(min(p0.y, p1.y), p2.y));
+        int maxY = ceil(max(max(p0.y, p1.y), p2.y));
 
         for (int y = minY; y <= maxY; y++)
         {
