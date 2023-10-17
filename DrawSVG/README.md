@@ -64,3 +64,11 @@
             }
         };
 ```
+
+## Task 4
+
+可能需要自己定义supersample_target
+
+参考：
+
+https://poe.com/s/ai24J7QiLwJG5x0tv4Gk
