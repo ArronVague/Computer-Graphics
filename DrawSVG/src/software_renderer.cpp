@@ -262,6 +262,11 @@ namespace CMU462
         render_target[4 * (sx + sy * target_w) + 3] = (uint8_t)(color.a * 255);
     }
 
+    float getGrandient(float x)
+    {
+        return 1.0 - (x - floor(x));
+    }
+
     void SoftwareRendererImp::rasterize_line(float x0, float y0,
                                              float x1, float y1,
                                              Color color)
@@ -306,6 +311,44 @@ namespace CMU462
             }
         };
         Bresenham(x0, y0, x1, y1, color);
+
+        // bool steep = abs(y1 - y0) > abs(x1 - x0);
+        // if (steep)
+        // {
+        //     swap(x0, y0);
+        //     swap(x1, y1);
+        // }
+        // if (x0 > x1)
+        // {
+        //     swap(x0, x1);
+        //     swap(y0, y1);
+        // }
+
+        // float dx = x1 - x0;
+        // float dy = y1 - y0;
+        // float gradient = dy / dx;
+
+        // float xend = round(x0);
+        // float yend = y0 + gradient * (xend - x0);
+        // float xgap = getGrandient(x0 + 0.5);
+        // float xpxl1 = xend;
+        // float ypxl1 = floor(yend);
+
+        // if (steep)
+        // {
+        //     rasterize_point(ypxl1, xpxl1, color);
+        //     rasterize_point(ypxl1 + 1, xpxl1, color);
+        // }
+        // else
+        // {
+        //     rasterize_point(xpxl1, ypxl1, color);
+        //     rasterize_point(xpxl1, ypxl1 + 1, color);
+        // }
+
+        // float intery = yend + gradient;
+
+        // xend = round(x1);
+        // yend = y1 + gradient * (xend - x1);
     }
 
     void SoftwareRendererImp::rasterize_triangle(float x0, float y0,
@@ -315,6 +358,35 @@ namespace CMU462
     {
         // Task 3:
         // Implement triangle rasterization
+        Vector2D p0 = Vector2D(x0, y0);
+        Vector2D p1 = Vector2D(x1, y1);
+        Vector2D p2 = Vector2D(x2, y2);
+
+        int minX = min(min(p0.x, p1.x), p2.x);
+        int maxX = max(max(p0.x, p1.x), p2.x);
+        int minY = min(min(p0.y, p1.y), p2.y);
+        int maxY = max(max(p0.y, p1.y), p2.y);
+
+        for (int y = minY; y <= maxY; y++)
+        {
+            for (int x = minX; x <= maxX; x++)
+            {
+                Vector2D pixel = Vector2D(x + 0.5, y + 0.5);
+
+                Vector2D d0 = p0 - pixel;
+                Vector2D d1 = p1 - pixel;
+                Vector2D d2 = p2 - pixel;
+
+                float cross0 = cross(d0, d1);
+                float cross1 = cross(d1, d2);
+                float cross2 = cross(d2, d0);
+
+                if (cross0 >= 0 && cross1 >= 0 && cross2 >= 0)
+                {
+                    rasterize_point(x, y, color);
+                }
+            }
+        }
     }
 
     void SoftwareRendererImp::rasterize_image(float x0, float y0,
