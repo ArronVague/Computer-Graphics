@@ -21,8 +21,6 @@ namespace CMU462
         // set top level transformation
         transformation = svg_2_screen;
 
-        update_sample_buffer();
-
         // draw all elements
         for (size_t i = 0; i < svg.elements.size(); ++i)
         {
@@ -58,7 +56,8 @@ namespace CMU462
         // Task 4:
         // You may want to modify this for supersampling support
         this->sample_rate = sample_rate;
-        update_sample_buffer();
+
+        this->sample_buffer.resize(4 * this->w * this->h);
     }
 
     void SoftwareRendererImp::set_render_target(unsigned char *render_target,
@@ -70,18 +69,11 @@ namespace CMU462
         this->render_target = render_target;
         this->target_w = width;
         this->target_h = height;
-        update_sample_buffer();
+
         // this->w = width * this->sample_rate;
         // this->h = height * this->sample_rate;
 
         // this->sample_buffer.resize(4 * this->w * this->h);
-    }
-
-    void SoftwareRendererImp::update_sample_buffer()
-    {
-        this->sample_w = this->target_w * this->sample_rate;
-        this->sample_h = this->target_h * this->sample_rate;
-        this->sample_buffer.assign(this->sample_h * this->sample_w, Color(1, 1, 1, 1));
     }
 
     void SoftwareRendererImp::draw_element(SVGElement *element)
@@ -419,17 +411,47 @@ namespace CMU462
         // Task 4:
         // Implement supersampling
         // You may also need to modify other functions marked with "Task 4".
-        Color c;
-        size_t sample_squared = sample_rate * sample_rate;
-        float sample_squared_inverse = 1.0f / float(sample_squared);
-        for (int sy = 0; sy < target_h; ++sy)
-            for (int sx = 0; sx < target_w; ++sx)
+        for (size_t y = 0; y < target_h; y++)
+        {
+            for (size_t x = 0; x < target_w; x++)
             {
-                c.r = c.g = c.b = c.a = 0;
-                for (int i = 0; i < sample_squared; ++i)
-                    c += sample_buffer[(sy * sample_rate + i / sample_rate) * sample_w + (sx * sample_rate + i % sample_rate)] * sample_squared_inverse;
-                put_pixel(sx, sy, c);
+                float accumulated_r = 0.0f;
+                float accumulated_g = 0.0f;
+                float accumulated_b = 0.0f;
+                float accumulated_a = 0.0f;
+
+                for (size_t sy = y * sample_rate; sy < (y + 1) * sample_rate; sy++)
+                {
+                    for (size_t sx = x * sample_rate; sx < (x + 1) * sample_rate; sx++)
+                    {
+                        size_t sample_index = (sy * sample_rate + sx) * 4;
+                        float sample_r = sample_buffer[sample_index];
+                        float sample_g = sample_buffer[sample_index + 1];
+                        float sample_b = sample_buffer[sample_index + 2];
+                        float sample_a = sample_buffer[sample_index + 3];
+
+                        // Accumulate the color
+                        accumulated_r += sample_r;
+                        accumulated_g += sample_g;
+                        accumulated_b += sample_b;
+                        accumulated_a += sample_a;
+                    }
+                }
+
+                float inv_sample_count = 1.0f / (sample_rate * sample_rate);
+                accumulated_r *= inv_sample_count;
+                accumulated_g *= inv_sample_count;
+                accumulated_b *= inv_sample_count;
+                accumulated_a *= inv_sample_count;
+
+                // Set the averaged color to the target render
+                size_t target_index = (y * target_w + x) * 4;
+                render_target[target_index] = static_cast<unsigned char>(accumulated_r);
+                render_target[target_index + 1] = static_cast<unsigned char>(accumulated_g);
+                render_target[target_index + 2] = static_cast<unsigned char>(accumulated_b);
+                render_target[target_index + 3] = static_cast<unsigned char>(accumulated_a);
             }
+        }
         return;
     }
 
