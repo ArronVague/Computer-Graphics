@@ -308,6 +308,7 @@ namespace CMU462
 
         // Bresenham's line algorithm
         // 通过[this]捕获this，从而在lambda函数内部调用成员函数
+        /*Bresenham's line algorithm
         function<void(float, float, float, float, Color)> Bresenham = [this](float x0, float y0, float x1, float y1, Color color)
         {
             int x_start = (int)floor(x0);
@@ -323,8 +324,8 @@ namespace CMU462
 
             while (true)
             {
-                // rasterize_sample_point(x_start, y_start, color);
-                rasterize_point(x_start, y_start, color);
+                rasterize_sample_point(x_start, y_start, color);
+                // rasterize_point(x_start, y_start, color);
                 if (x_start == x_end && y_start == y_end)
                 {
                     break;
@@ -342,12 +343,13 @@ namespace CMU462
                 }
             }
         };
+        */
         x0 *= sample_rate;
         y0 *= sample_rate;
         x1 *= sample_rate;
         y1 *= sample_rate;
 
-        Bresenham(x0, y0, x1, y1, color);
+        // Bresenham(x0, y0, x1, y1, color);
 
         // bool steep = abs(y1 - y0) > abs(x1 - x0);
         // if (steep)
@@ -386,6 +388,58 @@ namespace CMU462
 
         // xend = round(x1);
         // yend = y1 + gradient * (xend - x1);
+        int x_start, x_end, y_start;
+        bool steep = false; // 是不是以y方向为递增
+        float dy = abs(y0 - y1);
+        float dx = abs(x0 - x1);
+        if (dy > dx)
+        {
+            std::swap(x0, y0);
+        std:
+            swap(x1, y1);
+            steep = true;
+        }
+        if (x0 > x1)
+        {
+            std::swap(x0, x1);
+            std::swap(y0, y1);
+        }
+        dy = y1 - y0;
+        dx = x1 - x0;
+        x_start = (int)round(x0);
+        x_end = (int)round(x1);
+        float slope = dy / dx;
+        float y_f = y0 + slope * (x_start - x0);
+        for (int i = x_start; i <= x_end; i++)
+        {
+            float y_start = (int)floor(y_f);
+            float y_l = y_f + 0.5f * slope;
+            float y_c = y_start + 0.5f;
+            float dis = abs(y_c - y_l);
+            float dis2;
+            int index;
+            if (abs(y_c + 1 - y_l) < abs(y_c - 1 - y_l))
+            {
+                index = 1;
+                dis2 = abs(y_c + 1 - y_l);
+            }
+            else
+            {
+                index = -1;
+                dis2 = abs(y_c - 1 - y_l);
+            }
+            if (steep)
+            {
+                rasterize_sample_point(y_start, i, color * (1 - dis));
+                rasterize_sample_point(y_start + index, i, color * (1 - dis2));
+            }
+            else
+            {
+                rasterize_sample_point(i, y_start, color * (1 - dis));
+                rasterize_sample_point(i, y_start + index, color * (1 - dis2));
+            }
+            y_f += slope;
+        }
     }
 
     void SoftwareRendererImp::rasterize_triangle(float x0, float y0,
@@ -427,8 +481,8 @@ namespace CMU462
 
                 if (cross0 >= 0 && cross1 >= 0 && cross2 >= 0)
                 {
-                    // rasterize_sample_point(x, y, color);
-                    rasterize_point(x, y, color);
+                    rasterize_sample_point(x, y, color);
+                    // rasterize_point(x, y, color);
                 }
             }
         }
