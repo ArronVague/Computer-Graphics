@@ -57,7 +57,10 @@ namespace CMU462
         // You may want to modify this for supersampling support
         this->sample_rate = sample_rate;
 
-        this->sample_buffer.resize(4 * this->w * this->h);
+        this->buffer_w = this->target_w * this->sample_rate;
+        this->buffer_h = this->target_h * this->sample_rate;
+        this->sample_buffer.resize(4 * this->buffer_w * this->buffer_h);
+        memset(sample_buffer.data(), 255, 4 * buffer_h * buffer_w);
     }
 
     void SoftwareRendererImp::set_render_target(unsigned char *render_target,
@@ -70,10 +73,10 @@ namespace CMU462
         this->target_w = width;
         this->target_h = height;
 
-        // this->w = width * this->sample_rate;
-        // this->h = height * this->sample_rate;
-
-        // this->sample_buffer.resize(4 * this->w * this->h);
+        this->buffer_w = this->target_w * this->sample_rate;
+        this->buffer_h = this->target_h * this->sample_rate;
+        this->sample_buffer.resize(4 * this->buffer_w * this->buffer_h);
+        memset(sample_buffer.data(), 255, 4 * buffer_h * buffer_w);
     }
 
     void SoftwareRendererImp::draw_element(SVGElement *element)
@@ -246,13 +249,8 @@ namespace CMU462
 
     // Rasterization //
 
-    // The input arguments in the rasterization functions
-    // below are all defined in screen space coordinates
-
-    void SoftwareRendererImp::rasterize_point(float x, float y, Color color)
+    void SoftwareRendererImp::rasterize_sample_point(float x, float y, Color color)
     {
-
-        // fill in the nearest pixel
         int sx = (int)floor(x);
         int sy = (int)floor(y);
 
@@ -263,10 +261,36 @@ namespace CMU462
             return;
 
         // fill sample - NOT doing alpha blending!
-        render_target[4 * (sx + sy * target_w)] = (uint8_t)(color.r * 255);
-        render_target[4 * (sx + sy * target_w) + 1] = (uint8_t)(color.g * 255);
-        render_target[4 * (sx + sy * target_w) + 2] = (uint8_t)(color.b * 255);
-        render_target[4 * (sx + sy * target_w) + 3] = (uint8_t)(color.a * 255);
+        sample_buffer[4 * (sx + sy * buffer_w)] = (uint8_t)(color.r * 255);
+        sample_buffer[4 * (sx + sy * buffer_w) + 1] = (uint8_t)(color.g * 255);
+        sample_buffer[4 * (sx + sy * buffer_w) + 2] = (uint8_t)(color.b * 255);
+        sample_buffer[4 * (sx + sy * buffer_w) + 3] = (uint8_t)(color.a * 255);
+    }
+    // The input arguments in the rasterization functions
+    // below are all defined in screen space coordinates
+
+    void SoftwareRendererImp::rasterize_point(float x, float y, Color color)
+    {
+
+        // fill in the nearest pixel
+        // int sx = (int)floor(x);
+        // int sy = (int)floor(y);
+
+        // // check bounds
+        // if (sx < 0 || sx >= target_w)
+        //     return;
+        // if (sy < 0 || sy >= target_h)
+        //     return;
+
+        // // fill sample - NOT doing alpha blending!
+        // render_target[4 * (sx + sy * target_w)] = (uint8_t)(color.r * 255);
+        // render_target[4 * (sx + sy * target_w) + 1] = (uint8_t)(color.g * 255);
+        // render_target[4 * (sx + sy * target_w) + 2] = (uint8_t)(color.b * 255);
+        // render_target[4 * (sx + sy * target_w) + 3] = (uint8_t)(color.a * 255);
+        x *= sample_rate;
+        y *= sample_rate;
+        rasterize_sample_point(x, y, color);
+        return;
     }
 
     float getGrandient(float x)
@@ -299,7 +323,7 @@ namespace CMU462
 
             while (true)
             {
-                rasterize_point(x_start, y_start, color);
+                rasterize_sample_point(x_start, y_start, color);
                 if (x_start == x_end && y_start == y_end)
                 {
                     break;
@@ -317,6 +341,11 @@ namespace CMU462
                 }
             }
         };
+        x0 *= sample_rate;
+        y0 *= sample_rate;
+        x1 *= sample_rate;
+        y1 *= sample_rate;
+
         Bresenham(x0, y0, x1, y1, color);
 
         // bool steep = abs(y1 - y0) > abs(x1 - x0);
@@ -365,6 +394,13 @@ namespace CMU462
     {
         // Task 3:
         // Implement triangle rasterization
+        x0 *= sample_rate;
+        y0 *= sample_rate;
+        x1 *= sample_rate;
+        y1 *= sample_rate;
+        x2 *= sample_rate;
+        y2 *= sample_rate;
+
         Vector2D p0 = Vector2D(x0, y0);
         Vector2D p1 = Vector2D(x1, y1);
         Vector2D p2 = Vector2D(x2, y2);
@@ -390,7 +426,7 @@ namespace CMU462
 
                 if (cross0 >= 0 && cross1 >= 0 && cross2 >= 0)
                 {
-                    rasterize_point(x, y, color);
+                    rasterize_sample_point(x, y, color);
                 }
             }
         }
@@ -411,47 +447,36 @@ namespace CMU462
         // Task 4:
         // Implement supersampling
         // You may also need to modify other functions marked with "Task 4".
-        for (size_t y = 0; y < target_h; y++)
+        memset(render_target, 255, 4 * target_w * target_h);
+        if (sample_rate == 1)
         {
-            for (size_t x = 0; x < target_w; x++)
+            memcpy(render_target, sample_buffer.data(), 4 * buffer_w * buffer_h);
+        }
+        else
+        {
+            for (int x = 0; x < target_w; x++)
             {
-                float accumulated_r = 0.0f;
-                float accumulated_g = 0.0f;
-                float accumulated_b = 0.0f;
-                float accumulated_a = 0.0f;
-
-                for (size_t sy = y * sample_rate; sy < (y + 1) * sample_rate; sy++)
+                for (int y = 0; y < target_h; y++)
                 {
-                    for (size_t sx = x * sample_rate; sx < (x + 1) * sample_rate; sx++)
+                    unsigned int r = 0, g = 0, b = 0, a = 0;
+                    for (int i = x * sample_rate; i < (x + 1) * sample_rate; i++)
                     {
-                        size_t sample_index = (sy * sample_rate + sx) * 4;
-                        float sample_r = sample_buffer[sample_index];
-                        float sample_g = sample_buffer[sample_index + 1];
-                        float sample_b = sample_buffer[sample_index + 2];
-                        float sample_a = sample_buffer[sample_index + 3];
-
-                        // Accumulate the color
-                        accumulated_r += sample_r;
-                        accumulated_g += sample_g;
-                        accumulated_b += sample_b;
-                        accumulated_a += sample_a;
+                        for (int j = y * sample_rate; j < (y + 1) * sample_rate; j++)
+                        {
+                            r += sample_buffer[4 * (i + j * buffer_w) + 0];
+                            g += sample_buffer[4 * (i + j * buffer_w) + 1];
+                            b += sample_buffer[4 * (i + j * buffer_w) + 2];
+                            a += sample_buffer[4 * (i + j * buffer_w) + 3];
+                        }
                     }
+                    render_target[4 * (x + y * target_w) + 0] = (uint8_t)(r / (sample_rate * sample_rate));
+                    render_target[4 * (x + y * target_w) + 1] = (uint8_t)(g / (sample_rate * sample_rate));
+                    render_target[4 * (x + y * target_w) + 2] = (uint8_t)(b / (sample_rate * sample_rate));
+                    render_target[4 * (x + y * target_w) + 3] = (uint8_t)(a / (sample_rate * sample_rate));
                 }
-
-                float inv_sample_count = 1.0f / (sample_rate * sample_rate);
-                accumulated_r *= inv_sample_count;
-                accumulated_g *= inv_sample_count;
-                accumulated_b *= inv_sample_count;
-                accumulated_a *= inv_sample_count;
-
-                // Set the averaged color to the target render
-                size_t target_index = (y * target_w + x) * 4;
-                render_target[target_index] = static_cast<unsigned char>(accumulated_r);
-                render_target[target_index + 1] = static_cast<unsigned char>(accumulated_g);
-                render_target[target_index + 2] = static_cast<unsigned char>(accumulated_b);
-                render_target[target_index + 3] = static_cast<unsigned char>(accumulated_a);
             }
         }
+        memset(sample_buffer.data(), 255, 4 * buffer_w * buffer_h);
         return;
     }
 

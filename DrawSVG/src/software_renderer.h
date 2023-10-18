@@ -113,6 +113,8 @@ namespace CMU462
 
         // Rasterization //
 
+        void rasterize_sample_point(float x, float y, Color color);
+
         // rasterize a point
         void rasterize_point(float x, float y, Color color);
 
@@ -136,8 +138,8 @@ namespace CMU462
         void resolve(void);
 
         std::vector<unsigned char> sample_buffer;
-        int w;
-        int h;
+        size_t buffer_w;
+        size_t buffer_h;
 
     }; // class SoftwareRendererImp
 
