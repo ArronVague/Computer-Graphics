@@ -323,7 +323,8 @@ namespace CMU462
 
             while (true)
             {
-                rasterize_sample_point(x_start, y_start, color);
+                // rasterize_sample_point(x_start, y_start, color);
+                rasterize_point(x_start, y_start, color);
                 if (x_start == x_end && y_start == y_end)
                 {
                     break;
@@ -341,10 +342,10 @@ namespace CMU462
                 }
             }
         };
-        // x0 *= sample_rate;
-        // y0 *= sample_rate;
-        // x1 *= sample_rate;
-        // y1 *= sample_rate;
+        x0 *= sample_rate;
+        y0 *= sample_rate;
+        x1 *= sample_rate;
+        y1 *= sample_rate;
 
         Bresenham(x0, y0, x1, y1, color);
 
@@ -394,12 +395,12 @@ namespace CMU462
     {
         // Task 3:
         // Implement triangle rasterization
-        // x0 *= sample_rate;
-        // y0 *= sample_rate;
-        // x1 *= sample_rate;
-        // y1 *= sample_rate;
-        // x2 *= sample_rate;
-        // y2 *= sample_rate;
+        x0 *= sample_rate;
+        y0 *= sample_rate;
+        x1 *= sample_rate;
+        y1 *= sample_rate;
+        x2 *= sample_rate;
+        y2 *= sample_rate;
 
         Vector2D p0 = Vector2D(x0, y0);
         Vector2D p1 = Vector2D(x1, y1);
@@ -426,7 +427,8 @@ namespace CMU462
 
                 if (cross0 >= 0 && cross1 >= 0 && cross2 >= 0)
                 {
-                    rasterize_sample_point(x, y, color);
+                    // rasterize_sample_point(x, y, color);
+                    rasterize_point(x, y, color);
                 }
             }
         }
