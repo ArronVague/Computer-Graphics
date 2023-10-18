@@ -60,7 +60,7 @@ namespace CMU462
         this->buffer_w = this->target_w * this->sample_rate;
         this->buffer_h = this->target_h * this->sample_rate;
         this->sample_buffer.resize(4 * this->buffer_w * this->buffer_h);
-        memset(sample_buffer.data(), 255, 4 * buffer_h * buffer_w);
+        memset(sample_buffer.data(), 255, 4 * buffer_w * buffer_h);
     }
 
     void SoftwareRendererImp::set_render_target(unsigned char *render_target,
@@ -76,7 +76,7 @@ namespace CMU462
         this->buffer_w = this->target_w * this->sample_rate;
         this->buffer_h = this->target_h * this->sample_rate;
         this->sample_buffer.resize(4 * this->buffer_w * this->buffer_h);
-        memset(sample_buffer.data(), 255, 4 * buffer_h * buffer_w);
+        memset(sample_buffer.data(), 255, 4 * buffer_w * buffer_h);
     }
 
     void SoftwareRendererImp::draw_element(SVGElement *element)
@@ -255,9 +255,9 @@ namespace CMU462
         int sy = (int)floor(y);
 
         // check bounds
-        if (sx < 0 || sx >= target_w)
+        if (sx < 0 || sx >= buffer_w)
             return;
-        if (sy < 0 || sy >= target_h)
+        if (sy < 0 || sy >= buffer_h)
             return;
 
         // fill sample - NOT doing alpha blending!
