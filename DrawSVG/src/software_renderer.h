@@ -69,7 +69,10 @@ namespace CMU462
     class SoftwareRendererImp : public SoftwareRenderer
     {
     public:
-        SoftwareRendererImp() : SoftwareRenderer() {}
+        SoftwareRendererImp() : SoftwareRenderer()
+        {
+            update_sample_buffer();
+        }
 
         // draw an svg input to render target
         void draw_svg(SVG &svg);
@@ -135,9 +138,29 @@ namespace CMU462
         // resolve samples to render target
         void resolve(void);
 
-        std::vector<unsigned char> sample_buffer;
-        int w;
-        int h;
+        inline void put_pixel(int sx, int sy, uint8_t r, uint8_t g, uint8_t b, uint8_t a)
+        {
+            auto base = 4 * (sx + sy * target_w);
+            render_target[base] = r;
+            render_target[base + 1] = g;
+            render_target[base + 2] = b;
+            render_target[base + 3] = a;
+        }
+
+        inline void put_pixel(int sx, int sy, const Color &pm_color)
+        {
+            put_pixel(
+                sx, sy,
+                static_cast<uint8_t>(pm_color.r / pm_color.a * 255),
+                static_cast<uint8_t>(pm_color.g / pm_color.a * 255),
+                static_cast<uint8_t>(pm_color.b / pm_color.a * 255),
+                static_cast<uint8_t>(255));
+        }
+
+        std::vector<Color> sample_buffer;
+        size_t sample_w;
+        size_t sample_h;
+        void update_sample_buffer();
 
     }; // class SoftwareRendererImp
 
