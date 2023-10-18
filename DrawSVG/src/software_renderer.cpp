@@ -4,7 +4,6 @@
 #include <vector>
 #include <iostream>
 #include <algorithm>
-#include <functional>
 
 #include "triangulation.h"
 
@@ -251,6 +250,7 @@ namespace CMU462
 
     void SoftwareRendererImp::rasterize_sample_point(float x, float y, Color color)
     {
+        // fill in the nearest pixel
         int sx = (int)floor(x);
         int sy = (int)floor(y);
 
@@ -266,128 +266,109 @@ namespace CMU462
         sample_buffer[4 * (sx + sy * buffer_w) + 2] = (uint8_t)(color.b * 255);
         sample_buffer[4 * (sx + sy * buffer_w) + 3] = (uint8_t)(color.a * 255);
     }
+
     // The input arguments in the rasterization functions
     // below are all defined in screen space coordinates
 
     void SoftwareRendererImp::rasterize_point(float x, float y, Color color)
     {
-
-        // fill in the nearest pixel
-        // int sx = (int)floor(x);
-        // int sy = (int)floor(y);
-
-        // // check bounds
-        // if (sx < 0 || sx >= target_w)
-        //     return;
-        // if (sy < 0 || sy >= target_h)
-        //     return;
-
-        // // fill sample - NOT doing alpha blending!
-        // render_target[4 * (sx + sy * target_w)] = (uint8_t)(color.r * 255);
-        // render_target[4 * (sx + sy * target_w) + 1] = (uint8_t)(color.g * 255);
-        // render_target[4 * (sx + sy * target_w) + 2] = (uint8_t)(color.b * 255);
-        // render_target[4 * (sx + sy * target_w) + 3] = (uint8_t)(color.a * 255);
+        // render in sample_buffer
         x *= sample_rate;
         y *= sample_rate;
         rasterize_sample_point(x, y, color);
         return;
+
+        // fill in the nearest pixel
+        int sx = (int)floor(x);
+        int sy = (int)floor(y);
+
+        // check bounds
+        if (sx < 0 || sx >= target_w)
+            return;
+        if (sy < 0 || sy >= target_h)
+            return;
+
+        // fill sample - NOT doing alpha blending!
+        render_target[4 * (sx + sy * target_w)] = (uint8_t)(color.r * 255);
+        render_target[4 * (sx + sy * target_w) + 1] = (uint8_t)(color.g * 255);
+        render_target[4 * (sx + sy * target_w) + 2] = (uint8_t)(color.b * 255);
+        render_target[4 * (sx + sy * target_w) + 3] = (uint8_t)(color.a * 255);
     }
 
-    float getGrandient(float x)
+    float point_to_line_dis(Vector2D p0, Vector2D p1, Vector2D p)
     {
-        return 1.0 - (x - floor(x));
+        return (float)std::abs((p.x - p0.x) * (-p1.y + p0.y) + (p.y - p0.y) * (p1.x - p0.x)) / (p1 - p0).norm();
+    }
+
+    bool coverage(float x0, float y0, float x1, float y1, float x2, float y2, float x, float y)
+    {
+        float w1 = (x0 * (y2 - y0) + (y - y0) * (x2 - x0) - x * (y2 - y0)) / ((y1 - y0) * (x2 - x0) - (x1 - x0) * (y2 - y0));
+        float w2 = (y - y0 - w1 * (y1 - y0)) / (y2 - y0);
+        return w1 >= 0 && w2 >= 0 && (w1 + w2) <= 1;
+    }
+
+    void SoftwareRendererImp::draw_triangle(Vector2D p0, Vector2D p1, Vector2D t0, Vector2D t1, Vector2D t2, Color color, int width = 2)
+    {
+        float minx = std::min({t0.x, t1.x, t2.x});
+        float maxx = std::max({t0.x, t1.x, t2.x});
+        float miny = std::min({t0.y, t1.y, t2.y});
+        float maxy = std::max({t0.y, t1.y, t2.y});
+        int xstart = (int)floor(minx);
+        int xend = (int)ceil(maxx);
+        int ystart = (int)floor(miny);
+        int yend = (int)ceil(maxy);
+        for (int x = xstart; x < xend; x++)
+        {
+            for (int y = ystart; y < yend; y++)
+            {
+                float dis = point_to_line_dis(p0, p1, {x + 0.5f, y + 0.5f});
+                float factor = dis * 2 / width;
+                if (coverage(t0.x, t0.y, t1.x, t1.y, t2.x, t2.y, x + 0.5f, y + 0.5f))
+                {
+                    rasterize_point(x, y, color * (1 - factor));
+                }
+            }
+        }
     }
 
     void SoftwareRendererImp::rasterize_line(float x0, float y0,
                                              float x1, float y1,
                                              Color color)
     {
-
         // Task 2:
         // Implement line rasterization
 
-        // Bresenham's line algorithm
-        // 通过[this]捕获this，从而在lambda函数内部调用成员函数
-        /*Bresenham's line algorithm
-        function<void(float, float, float, float, Color)> Bresenham = [this](float x0, float y0, float x1, float y1, Color color)
-        {
-            int x_start = (int)floor(x0);
-            int y_start = (int)floor(y0);
-            int x_end = (int)floor(x1);
-            int y_end = (int)floor(y1);
-
-            int dx = abs(x_end - x_start);
-            int dy = abs(y_end - y_start);
-            int sx = (x_start < x_end) ? 1 : -1;
-            int sy = (y_start < y_end) ? 1 : -1;
-            int err = dx - dy;
-
-            while (true)
-            {
-                rasterize_sample_point(x_start, y_start, color);
-                // rasterize_point(x_start, y_start, color);
-                if (x_start == x_end && y_start == y_end)
-                {
-                    break;
-                }
-                int e2 = 2 * err;
-                if (e2 > -dy)
-                {
-                    err -= dy;
-                    x_start += sx;
-                }
-                if (e2 < dx)
-                {
-                    err += dx;
-                    y_start += sy;
-                }
-            }
-        };
-        */
+        // if render in sample_buffer, coordinate must multiple by sample_rate
         x0 *= sample_rate;
         y0 *= sample_rate;
         x1 *= sample_rate;
         y1 *= sample_rate;
 
-        // Bresenham(x0, y0, x1, y1, color);
+        // Draw line as a triangle
+        // 先处理特殊情况
+        // if (x0 == x1) {
+        //  draw_triangle({ x0, y0 }, { x1, y1 }, { x0 - 1, y0 }, { x0 + 1, y0 }, { x1 + 1, y1 }, color);
+        //  draw_triangle({ x0, y0 }, { x1, y1 }, { x1 + 1, y1 }, { x1 - 1, y1 }, { x0 - 1, y0 }, color);
+        //}
+        // else if (y0 == y1) {
+        //  draw_triangle({ x0, y0 }, { x1, y1 }, { x0, y0 - 1 }, { x1, y1 - 1 }, { x1, y1 + 1 }, color);
+        //  draw_triangle({ x0, y0 }, { x1, y1 }, { x1, y1 + 1 }, { x0, y0 + 1 }, { x0, y0 - 1 }, color);
+        //}
+        // else {
+        //  Vector2D v0{ -1, 0 };
+        //  Vector2D v1{x1 - x0, y1 - y0};
+        //  float offsetY = (float)std::abs(dot(v0, v1) / v1.norm());
+        //  float slope = y1 - y0 / x1 - x0;
+        //  Vector2D v2{ 1, -1 / slope };
+        //  Vector2D v3{ 1, 0 };
+        //  float offsetX = (float)std::abs(dot(v2, v3) / v2.norm());
+        //  if (slope > 0) {
+        //    offsetY = -offsetY;
+        //  }
+        //  draw_triangle({ x0, y0 }, { x1, y1 }, { x0 - offsetX, y0 - offsetY }, { x0 + offsetX, y0 + offsetY  }, { x1 + offsetX, y1 + offsetY }, color);
+        //  draw_triangle({ x0, y0 }, { x1, y1 }, { x1 + offsetX, y1 + offsetY }, { x1 - offsetX, y1 - offsetY }, { x0 - offsetX , y0 - offsetY }, color);
+        //}
 
-        // bool steep = abs(y1 - y0) > abs(x1 - x0);
-        // if (steep)
-        // {
-        //     swap(x0, y0);
-        //     swap(x1, y1);
-        // }
-        // if (x0 > x1)
-        // {
-        //     swap(x0, x1);
-        //     swap(y0, y1);
-        // }
-
-        // float dx = x1 - x0;
-        // float dy = y1 - y0;
-        // float gradient = dy / dx;
-
-        // float xend = round(x0);
-        // float yend = y0 + gradient * (xend - x0);
-        // float xgap = getGrandient(x0 + 0.5);
-        // float xpxl1 = xend;
-        // float ypxl1 = floor(yend);
-
-        // if (steep)
-        // {
-        //     rasterize_point(ypxl1, xpxl1, color);
-        //     rasterize_point(ypxl1 + 1, xpxl1, color);
-        // }
-        // else
-        // {
-        //     rasterize_point(xpxl1, ypxl1, color);
-        //     rasterize_point(xpxl1, ypxl1 + 1, color);
-        // }
-
-        // float intery = yend + gradient;
-
-        // xend = round(x1);
-        // yend = y1 + gradient * (xend - x1);
         int x_start, x_end, y_start;
         bool steep = false; // 是不是以y方向为递增
         float dy = abs(y0 - y1);
@@ -399,17 +380,45 @@ namespace CMU462
             swap(x1, y1);
             steep = true;
         }
+
         if (x0 > x1)
         {
             std::swap(x0, x1);
             std::swap(y0, y1);
         }
+
+        /** Bresenham start **/
+        /* dy = y1 - y0;
+         dx = x1 - x0;
+         x_start = (int)round(x0);
+         x_end = (int)round(x1);
+         y_start = (int)round(y0);
+
+         float error = 0;
+         for (int i = x_start; i <= x_end; i++) {
+             if (steep) {
+                 rasterize_point(y_start, i, color);
+             }
+             else {
+                 rasterize_point(i, y_start, color);
+             }
+             error += 2 * abs(dy);
+             if (abs(error) >= dx) {
+                 y_start += (dy > 0 ? 1 : -1);
+                 error -= 2 * dx;
+             }
+         }
+         return;*/
+        /** Bresenham end **/
+
+        /** Xiaolin Wu's line algorithm */
         dy = y1 - y0;
         dx = x1 - x0;
         x_start = (int)round(x0);
         x_end = (int)round(x1);
         float slope = dy / dx;
         float y_f = y0 + slope * (x_start - x0);
+
         for (int i = x_start; i <= x_end; i++)
         {
             float y_start = (int)floor(y_f);
@@ -442,6 +451,52 @@ namespace CMU462
         }
     }
 
+    bool line_segment_interset(float x0, float y0, float x1, float y1, float x2, float y2, float x3, float y3)
+    {
+        float ax = x1 - x0;
+        float ay = y1 - y0;
+        float bx = x3 - x2;
+        float by = y3 - y2;
+        float cx = x0 - x2;
+        float cy = y0 - y2;
+        float denominator = ay * bx - ax * by;
+        float numerator = by * cx - bx * cy;
+        if (denominator == 0)
+        {
+            return true;
+        }
+        else if (denominator < 0)
+        {
+            if (numerator <= 0 && numerator >= denominator)
+            {
+                return true;
+            }
+        }
+        else if (denominator > 0)
+        {
+            if (numerator >= 0 && numerator <= denominator)
+            {
+                return true;
+            }
+        }
+        numerator = ax * cy - ay * cx;
+        if (denominator < 0)
+        {
+            if (numerator <= 0 && numerator >= denominator)
+            {
+                return true;
+            }
+        }
+        else if (denominator > 0)
+        {
+            if (numerator >= 0 && numerator <= denominator)
+            {
+                return true;
+            }
+        }
+        return false;
+    }
+
     void SoftwareRendererImp::rasterize_triangle(float x0, float y0,
                                                  float x1, float y1,
                                                  float x2, float y2,
@@ -449,6 +504,7 @@ namespace CMU462
     {
         // Task 3:
         // Implement triangle rasterization
+
         x0 *= sample_rate;
         y0 *= sample_rate;
         x1 *= sample_rate;
@@ -456,33 +512,118 @@ namespace CMU462
         x2 *= sample_rate;
         y2 *= sample_rate;
 
-        Vector2D p0 = Vector2D(x0, y0);
-        Vector2D p1 = Vector2D(x1, y1);
-        Vector2D p2 = Vector2D(x2, y2);
+        // using bounding box
+        // rasterize_line(x0, y0, x1, y1, color);
+        // rasterize_line(x1, y1, x2, y2, color);
+        // rasterize_line(x2, y2, x0, y0, color);
+        // return;
+        float minx = std::min({x0, x1, x2});
+        float maxx = std::max({x0, x1, x2});
+        float miny = std::min({y0, y1, y2});
+        float maxy = std::max({y0, y1, y2});
+        int xstart = (int)floor(minx);
+        int xend = (int)ceil(maxx);
+        int ystart = (int)floor(miny);
+        int yend = (int)ceil(maxy);
 
-        int minX = floor(min(min(p0.x, p1.x), p2.x));
-        int maxX = ceil(max(max(p0.x, p1.x), p2.x));
-        int minY = floor(min(min(p0.y, p1.y), p2.y));
-        int maxY = ceil(max(max(p0.y, p1.y), p2.y));
-
-        for (int y = minY; y <= maxY; y++)
+        // using blockwise method
+        const int blocksize = 16;
+        for (int offsetX = 0; xstart + offsetX < xend; offsetX += blocksize)
         {
-            for (int x = minX; x <= maxX; x++)
+            for (int offsetY = 0; ystart + offsetY < yend; offsetY += blocksize)
             {
-                Vector2D pixel = Vector2D(x + 0.5, y + 0.5);
+                int x_lt = xstart + offsetX;
+                int y_lt = ystart + offsetY;
+                int x_rt = std::min(x_lt + blocksize, xend);
+                int y_rt = ystart + offsetY;
+                int x_lb = xstart + offsetX;
+                int y_lb = std::min(y_lt + blocksize, yend);
+                int x_rb = x_rt;
+                int y_rb = y_lb;
 
-                Vector2D d0 = p0 - pixel;
-                Vector2D d1 = p1 - pixel;
-                Vector2D d2 = p2 - pixel;
-
-                float cross0 = cross(d0, d1);
-                float cross1 = cross(d1, d2);
-                float cross2 = cross(d2, d0);
-
-                if (cross0 >= 0 && cross1 >= 0 && cross2 >= 0)
+                if (line_segment_interset(x_lt, y_lt, x_rt, y_rt, x0, y0, x1, y1))
                 {
-                    rasterize_sample_point(x, y, color);
-                    // rasterize_point(x, y, color);
+                    goto check_and_draw_tri;
+                }
+
+                if (line_segment_interset(x_lt, y_lt, x_rt, y_rt, x1, y1, x2, y2))
+                {
+                    goto check_and_draw_tri;
+                }
+
+                if (line_segment_interset(x_lt, y_lt, x_rt, y_rt, x2, y2, x0, y0))
+                {
+                    goto check_and_draw_tri;
+                }
+
+                if (line_segment_interset(x_lt, y_lt, x_lb, y_lb, x0, y0, x1, y1))
+                {
+                    goto check_and_draw_tri;
+                }
+
+                if (line_segment_interset(x_lt, y_lt, x_lb, y_lb, x1, y1, x2, y2))
+                {
+                    goto check_and_draw_tri;
+                }
+
+                if (line_segment_interset(x_lt, y_lt, x_lb, y_lb, x2, y2, x0, y0))
+                {
+                    goto check_and_draw_tri;
+                }
+
+                if (line_segment_interset(x_rt, y_rt, x_rb, y_rb, x0, y0, x1, y1))
+                {
+                    goto check_and_draw_tri;
+                }
+
+                if (line_segment_interset(x_rt, y_rt, x_rb, y_rb, x1, y1, x2, y2))
+                {
+                    goto check_and_draw_tri;
+                }
+
+                if (line_segment_interset(x_rt, y_rt, x_rb, y_rb, x2, y2, x0, y0))
+                {
+                    goto check_and_draw_tri;
+                }
+
+                if (line_segment_interset(x_lb, y_lb, x_rb, y_rb, x0, y0, x1, y1))
+                {
+                    goto check_and_draw_tri;
+                }
+
+                if (line_segment_interset(x_lb, y_lb, x_rb, y_rb, x1, y1, x2, y2))
+                {
+                    goto check_and_draw_tri;
+                }
+
+                if (line_segment_interset(x_lb, y_lb, x_rb, y_rb, x2, y2, x0, y0))
+                {
+                    goto check_and_draw_tri;
+                }
+
+                if (coverage(x0, y0, x1, y1, x2, y2, x_lt, y_lt))
+                {
+                    for (int x = x_lt; x < x_rt; x++)
+                    {
+                        for (int y = y_lt; y < y_lb; y++)
+                        {
+                            rasterize_sample_point(x, y, color);
+                        }
+                    }
+                }
+
+                continue;
+
+            check_and_draw_tri:
+                for (int x = x_lt; x < x_rt; x++)
+                {
+                    for (int y = y_lt; y < y_lb; y++)
+                    {
+                        if (coverage(x0, y0, x1, y1, x2, y2, x + 0.5f, y + 0.5f))
+                        {
+                            rasterize_sample_point(x, y, color);
+                        }
+                    }
                 }
             }
         }

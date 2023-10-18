@@ -82,6 +82,10 @@ namespace CMU462
                                size_t width, size_t height);
 
     private:
+        std::vector<unsigned char> sample_buffer;
+        size_t buffer_w;
+        size_t buffer_h;
+
         // Primitive Drawing //
 
         // Draws an SVG element
@@ -134,12 +138,10 @@ namespace CMU462
                              float x1, float y1,
                              Texture &tex);
 
+        void draw_triangle(Vector2D, Vector2D, Vector2D, Vector2D, Vector2D, Color, int);
+
         // resolve samples to render target
         void resolve(void);
-
-        std::vector<unsigned char> sample_buffer;
-        size_t buffer_w;
-        size_t buffer_h;
 
     }; // class SoftwareRendererImp
 
