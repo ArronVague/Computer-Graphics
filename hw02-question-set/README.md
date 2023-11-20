@@ -104,11 +104,17 @@ A -> B -> D -> a -> b -> c
 ### （3）
 
 $$
-\phi_0(x)=\frac{area(p,p_1,p_2)}{area(p_0,p_1,p_2)}=\frac{1}{5}
-
-\phi_1(x)=\frac{area(p,p_0,p_2)}{area(p_0,p_1,p_2)}=\frac{2}{5}
-
-\phi_2(x)=\frac{area(p,p_0,p_1)}{area(p_0,p_1,p_2)}=\frac{2}{5}
+\phi_0(x)=\frac{area(p,p_1,p_2)}{area(p_0,p_1,p_2)}=\frac{1}{5}\\
+\phi_1(x)=\frac{area(p,p_0,p_2)}{area(p_0,p_1,p_2)}=\frac{2}{5}\\
+\phi_2(x)=\frac{area(p,p_0,p_1)}{area(p_0,p_1,p_2)}=\frac{2}{5}\\
 $$
 
 重心坐标为 $(\frac{1}{5},\frac{2}{5},\frac{2}{5})$ 。
+
+<div>
+    \phi_0(x)=\frac{area(p,p_1,p_2)}{area(p_0,p_1,p_2)}=\frac{1}{5}\\
+	\phi_1(x)=\frac{area(p,p_0,p_2)}{area(p_0,p_1,p_2)}=\frac{2}{5}\\
+	\phi_2(x)=\frac{area(p,p_0,p_1)}{area(p_0,p_1,p_2)}=\frac{2}{5}\\
+</div>
+
+​    
