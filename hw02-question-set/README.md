@@ -73,3 +73,9 @@ $$B(x)=(2x-x^2,x^2)$$
 
 ## 3. **ray geometry interact**
 
+## 4. spatial transformation
+
+### （1）
+
+关于y轴翻转，逆时针旋转 $\frac{\pi}{4}$
+
