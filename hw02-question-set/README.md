@@ -33,7 +33,7 @@
 
    （3）**linear algebra**
 
-   一个映射是线性的，当且仅当它可以表示为$$f(u_1,...u_m) = \sum\limits_{i=1}^m {u_i\mathbf{a}_i}$$。
+   一个映射是线性的，当且仅当它可以表示为 $$f(u_1,...u_m) = \sum\limits_{i=1}^m {u_i\mathbf{a}_i}$$。
 
 2. 
 
