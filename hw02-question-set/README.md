@@ -91,7 +91,7 @@ t_{max}=min(t_{x_1},t_{y_1})=2
 $$
 
 $$
-\because0<=t_{min}<t_{max}
+\because 0<=t_{min}<t_{max}
 $$
 
 $$
