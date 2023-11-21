@@ -168,7 +168,15 @@ $$
 
 ### （1）
 
-关于y轴反射，逆时针旋转 $\frac{\pi}{4}$ ，平移。
+假设鸭大校徽的本体坐标为 $(0,0)$ ，变换后的本体坐标为 $(1,2)$ 。
+
+首先顺时针旋转 $\frac{\pi}{4}$ ，然后关于y轴反射，最后平移。
+$$
+\begin{bmatrix}
+\cos\frac{\pi}{4} & -\sin\frac{\pi}{4} \\
+\sin\frac{\pi}{4} & \cos\frac{\pi}{4} \\
+\end{bmatrix}
+$$
 
 ## 5. ray geo interact acc
 
