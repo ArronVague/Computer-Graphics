@@ -173,13 +173,18 @@ $$
 首先顺时针旋转 $\frac{\pi}{4}$ ，然后关于y轴反射，最后平移。
 
 - 顺时针旋转 $\frac{\pi}{4}$ 的变换矩阵：
+  $$
+  \begin{bmatrix}
+  \cos\frac{\pi}{4} & -\sin\frac{\pi}{4} \\
+  \sin\frac{\pi}{4} & \cos\frac{\pi}{4} \\
+  \end{bmatrix}
+  $$
 
-$$
-\begin{bmatrix}
-\cos\frac{\pi}{4} & -\sin\frac{\pi}{4} \\
-\sin\frac{\pi}{4} & \cos\frac{\pi}{4} \\
-\end{bmatrix}
-$$
+- 关于y轴反射的变换矩阵：
+  $$
+  
+  $$
+  
 
 ## 5. ray geo interact acc
 
