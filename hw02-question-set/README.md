@@ -65,6 +65,105 @@ $$B(x)=(2x-x^2,x^2)$$
 
 ## 3. **ray geometry interact**
 
+光线 $\mathbf{o}=(1,1),\mathbf{d}=[1,1]$ ：
+$$
+t_{x_0}=\frac{x_0-\mathbf{o}_x}{\mathbf{d}_x}=1
+$$
+
+$$
+t_{x_1}=\frac{x_1-\mathbf{o}_x}{\mathbf{d}_x}=3
+$$
+
+$$
+t_{y_0}=\frac{y_0-\mathbf{o}_y}{\mathbf{d}_y}=0
+$$
+
+$$
+t_{y_1}=\frac{y_1-\mathbf{o}_y}{\mathbf{d}_y}=2
+$$
+
+$$
+t_{min}=max(t_{x_0},t_{y_0})=1
+$$
+
+$$
+t_{max}=min(t_{x_1},t_{y_1})=2
+$$
+
+$$
+\because0<=t_{min}<t_{max}
+$$
+
+$$
+\therefore光线\mathbf{o}=(1,1),\mathbf{d}=[1,1]与长方形相交
+$$
+
+光线 $\mathbf{o}=(1,2),\mathbf{d}=[1,1]$ ：
+$$
+t_{x_0}=\frac{x_0-\mathbf{o}_x}{\mathbf{d}_x}=1
+$$
+
+$$
+t_{x_1}=\frac{x_1-\mathbf{o}_x}{\mathbf{d}_x}=3
+$$
+
+$$
+t_{y_0}=\frac{y_0-\mathbf{o}_y}{\mathbf{d}_y}=-1
+$$
+
+$$
+t_{y_1}=\frac{y_1-\mathbf{o}_y}{\mathbf{d}_y}=1
+$$
+
+$$
+t_{min}=max(t_{x_0},t_{y_0})=1
+$$
+
+$$
+t_{max}=min(t_{x_1},t_{y_1})=1
+$$
+
+$$
+\because t_{min}=t_{max}
+$$
+
+$$
+\therefore光线\mathbf{o}=(1,2),\mathbf{d}=[1,1]没有与长方形相交
+$$
+
+光线 $\mathbf{o}=(1,1),\mathbf{d}=[1,-1]$ ：
+$$
+t_{x_0}=\frac{x_0-\mathbf{o}_x}{\mathbf{d}_x}=1
+$$
+
+$$
+t_{x_1}=\frac{x_1-\mathbf{o}_x}{\mathbf{d}_x}=3
+$$
+
+$$
+t_{y_0}=\frac{y_0-\mathbf{o}_y}{\mathbf{d}_y}=0
+$$
+
+$$
+t_{y_1}=\frac{y_1-\mathbf{o}_y}{\mathbf{d}_y}=-2
+$$
+
+$$
+t_{min}=max(t_{x_0},t_{y_1})=1
+$$
+
+$$
+t_{max}=min(t_{x_1},t_{y_0})=0
+$$
+
+$$
+\because t_{min}>t_{max}
+$$
+
+$$
+\therefore光线\mathbf{o}=(1,1),\mathbf{d}=[1,-1]没有与长方形相交
+$$
+
 ## 4. spatial transformation
 
 ### （1）
