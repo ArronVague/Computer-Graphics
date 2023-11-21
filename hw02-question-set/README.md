@@ -176,8 +176,8 @@ $$
 
 $$
 \begin{bmatrix}
-\cos\frac{\pi}{4} & -\sin\frac{\pi}{4} \\
-\sin\frac{\pi}{4} & \cos\frac{\pi}{4} \\
+\cos(-\frac{\pi}{4}) & -\sin(-\frac{\pi}{4}) \\
+\sin(-\frac{\pi}{4}) & \cos(-\frac{\pi}{4}) \\
 \end{bmatrix}
 $$
 
