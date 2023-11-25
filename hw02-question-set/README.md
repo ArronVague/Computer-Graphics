@@ -49,12 +49,12 @@ $$
 B(x)=(1-x)^2P_0+2x(1-x)P_1+x^2P_2
 $$
 
-
 即：
 
 $$
 B(x)=(1-x)^2\cdot(0,0)+2x(1-x)\cdot(1,0)+x^2\cdot(1,1)
 $$
+
 最终化简为：
 
 $$
@@ -72,6 +72,7 @@ $$
 ## 3. **ray geometry interact**
 
 光线 $\mathbf{o}=(1,1),\mathbf{d}=[1,1]$ ：
+
 $$
 t_{x_0}=\frac{x_0-\mathbf{o}_x}{\mathbf{d}_x}=1
 $$
@@ -105,6 +106,7 @@ $$
 $$
 
 光线 $\mathbf{o}=(1,2),\mathbf{d}=[1,1]$ ：
+
 $$
 t_{x_0}=\frac{x_0-\mathbf{o}_x}{\mathbf{d}_x}=1
 $$
@@ -138,6 +140,7 @@ $$
 $$
 
 光线 $\mathbf{o}=(1,1),\mathbf{d}=[1,-1]$ ：
+
 $$
 t_{x_0}=\frac{x_0-\mathbf{o}_x}{\mathbf{d}_x}=1
 $$
@@ -211,6 +214,7 @@ $$
 需要注意的是，由于T矩阵为 $3\times3$ 的矩阵，因此需要将R和F矩阵扩展为 $3\times3$ 的矩阵，即将原矩阵放在  $3\times3$ 单位矩阵的左上角。
 
 最终的变换矩阵为：
+
 $$
 \begin{bmatrix}
 -\frac{\sqrt{2}}{2} & -\frac{\sqrt{2}}{2} & 1 \\
@@ -218,7 +222,6 @@ $$
 0 & 0 & 1
 \end{bmatrix}
 $$
-
 
 ## 5. ray geo interact acc
 
