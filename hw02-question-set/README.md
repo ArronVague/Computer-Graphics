@@ -45,15 +45,21 @@ $$f(u_1,...u_m) = \sum\limits_{i=1}^m {u_i\mathbf{a}_i}$$
 
 二次贝塞尔曲线方程为：
 
-$$B(x)=(1-x)^2P_0+2x(1-x)P_1+x^2P_2$$
+$$
+B(x)=(1-x)^2P_0+2x(1-x)P_1+x^2P_2
+$$
+
 
 即：
 
-$$B(x)=(1-x)^2\cdot(0,0)+2x(1-x)\cdot(1,0)+x^2\cdot(1,1)$$
-
+$$
+B(x)=(1-x)^2\cdot(0,0)+2x(1-x)\cdot(1,0)+x^2\cdot(1,1)
+$$
 最终化简为：
 
-$$B(x)=(2x-x^2,x^2)$$
+$$
+B(x)=(2x-x^2,x^2)
+$$
 
 ### （2）**geometry**
 
@@ -172,7 +178,7 @@ $$
 
 首先顺时针旋转 $\frac{\pi}{4}$ ，然后关于y轴反射，最后平移。
 
-- 顺时针旋转 $\frac{\pi}{4}$ 的变换矩阵：
+- 顺时针旋转 $\frac{\pi}{4}$ 的变换矩阵R：
 
 $$
 \begin{bmatrix}
@@ -181,7 +187,7 @@ $$
 \end{bmatrix}
 $$
 
-- 关于y轴反射的变换矩阵：
+- 关于y轴反射的变换矩阵F：
 
 $$
 \begin{bmatrix}
@@ -190,18 +196,29 @@ $$
 \end{bmatrix}
 $$
 
-- 平移 $(1,2)$ 的变换矩阵为：
+- 平移 $(1,2)$ 的变换矩阵T：
 
 $$
 \begin{bmatrix}
-1 & 0 \\
-0 & 1 \\
-\end{bmatrix}
-\begin{bmatrix}
-1 \\
-2 \\
+1 & 0 & 1 \\
+0 & 1 & 2 \\
+0 & 0 & 1
 \end{bmatrix}
 $$
+
+将这三个矩阵按顺序相乘：T * F * R。
+
+需要注意的是，由于T矩阵为 $3\times3$ 的矩阵，因此需要将R和F矩阵扩展为 $3\times3$ 的矩阵，即将原矩阵放在  $3\times3$ 单位矩阵的左上角。
+
+最终的变换矩阵为：
+$$
+\begin{bmatrix}
+-\frac{\sqrt{2}}{2} & -\frac{\sqrt{2}}{2} & 1 \\
+-\frac{\sqrt{2}}{2} & \frac{\sqrt{2}}{2} & 2 \\
+0 & 0 & 1
+\end{bmatrix}
+$$
+
 
 ## 5. ray geo interact acc
 
