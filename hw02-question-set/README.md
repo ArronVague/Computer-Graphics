@@ -74,10 +74,12 @@ $$
 光线 $\mathbf{o}=(1,1),\mathbf{d}=[1,1]$ ：
 
 $$
-t_{x_0}=\frac{x_0-\mathbf{o}_x}{\mathbf{d}_x}=1 \\\\
-t_{x_1}=\frac{x_1-\mathbf{o}_x}{\mathbf{d}_x}=3
+t_{x_0}=\frac{x_0-\mathbf{o}_x}{\mathbf{d}_x}=1
 $$
 
+$$
+t_{x_1}=\frac{x_1-\mathbf{o}_x}{\mathbf{d}_x}=3
+$$
 
 $$
 t_{y_0}=\frac{y_0-\mathbf{o}_y}{\mathbf{d}_y}=0
